@@ -64,59 +64,45 @@ const AdminProjeEkle = () => {
         const kapakData = new FormData();
         const pdfData = new FormData();
 
-        // Resimleri Yükleme
         if (images.length > 0) {
           images.forEach((image) => {
             uploadFormData.append("images", image);
           });
+          uploadFormData.append("id", response.data.id);
+
+          await axios.post(`${BASE_URL}/api/v1/image`, uploadFormData, {
+            headers: {
+              Authorization: `Bearer ${token}`,
+              "Content-Type": "multipart/form-data",
+            },
+          });
         }
 
-        //Kapak IMG Yükleme
         if (imgKapak) {
           kapakData.append("image", imgKapak);
+          kapakData.append("id", response.data.id);
+
+          await axios.post(`${BASE_URL}/api/v1/image/cover`, kapakData, {
+            headers: {
+              Authorization: `Bearer ${token}`,
+              "Content-Type": "multipart/form-data",
+            },
+          });
         }
 
         if (pdf) {
           pdfData.append("image", pdf);
+          pdfData.append("id", response.data.id);
+
+          await axios.post(`${BASE_URL}/api/v1/image/pdf`, pdfData, {
+            headers: {
+              Authorization: `Bearer ${token}`,
+              "Content-Type": "multipart/form-data",
+            },
+          });
         }
 
         // ID ekle (örneğin gönderiden dönen ID kullanılabilir)
-        uploadFormData.append("id", response.data.id);
-        kapakData.append("id", response.data.id);
-        pdfData.append("id", response.data.id);
-
-        const responseImages = await axios.post(
-          `${BASE_URL}/api/v1/image`,
-          uploadFormData,
-          {
-            headers: {
-              Authorization: `Bearer ${token}`,
-              "Content-Type": "multipart/form-data",
-            },
-          }
-        );
-
-        const kapakImages = await axios.post(
-          `${BASE_URL}/api/v1/image/cover`,
-          kapakData,
-          {
-            headers: {
-              Authorization: `Bearer ${token}`,
-              "Content-Type": "multipart/form-data",
-            },
-          }
-        );
-
-        const pdfFile = await axios.post(
-          `${BASE_URL}/api/v1/image/pdf`,
-          pdfData,
-          {
-            headers: {
-              Authorization: `Bearer ${token}`,
-              "Content-Type": "multipart/form-data",
-            },
-          }
-        );
       }
 
       setTimeout(() => {
@@ -265,7 +251,6 @@ const AdminProjeEkle = () => {
                         const file = e.target.files[0];
                         setPdf(file);
                       }}
-                      required
                     />
                   </label>
                 </div>

@@ -341,7 +341,6 @@ const AdminProjeDuzenle = () => {
                         const file = e.target.files[0];
                         setPdf(file);
                       }}
-                      required
                     />
                   </label>
 
