@@ -1,0 +1,16 @@
+{
+  "dataCategoryTwo": [
+    {
+      "title": "Kategori 1",
+      "desc": "Daha fazlası için lütfen ürünlerimiz inceleyin",
+      "buttonText": "Tümünü Gör",
+      "img": "/images/anasayfa/K1.png"
+    },
+    {
+      "title": "Kategori 2",
+      "desc": "Daha fazlası için lütfen ürünlerimiz inceleyin",
+      "buttonText": "Tümünü Gör",
+      "img": "/images/anasayfa/K2.png"
+    }
+  ]
+}

@@ -12,6 +12,7 @@ import SikcaSorulan from "../../Kutuphanem/sikcaSorulan/SikcaSorulan";
 import FullImg from "../../Kutuphanem/fullImg/FullImg";
 import FadeInSection from "../../components/FadeInSection/FadeInSection";
 import SliderLeft from "../../Kutuphanem/sliderLeft/SliderLeft";
+import TwoCategory from "../../Kutuphanem/twoCategory/TwoCategory";
 
 const Anasayfa = () => {
   const [projeler, setProjeler] = useState([]);
@@ -54,14 +55,8 @@ const Anasayfa = () => {
 
   return (
     <div className="anasayfa">
-      <div className="topSideAnasayfa">
-        <div className="container">
-          <div className="topSideAnasayfaContent">
-            <Slider loading={loading} />
-            <SliderLeft />
-          </div>
-        </div>
-      </div>
+      <Slider loading={loading} />
+      <TwoCategory />
       <FadeInSection>
         <AnaProduct />
       </FadeInSection>

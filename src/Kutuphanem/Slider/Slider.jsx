@@ -12,32 +12,6 @@ const Slider = ({ loading }) => {
       autoplay: 3000,
     });
 
-    const applyAnimation = () => {
-      // Tüm slaytlardan fade-in sınıfını kaldır
-      const allTitles = document.querySelectorAll(".glide__slide .title");
-      allTitles.forEach((el) => {
-        el.classList.remove("fade-in-title");
-
-        // animasyonu sıfırlamak için force reflow
-        void el.offsetWidth;
-      });
-
-      // Şu anki aktif slaytı seç
-      const currentTitle = document.querySelector(
-        ".glide__slide--active .title"
-      );
-
-      if (currentTitle) {
-        // Küçük bir gecikmeyle fade-in sınıfı eklenir
-        setTimeout(() => {
-          currentTitle.classList.add("fade-in-title");
-        }, 100);
-      }
-    };
-
-    glideSlider.on("mount.after", applyAnimation);
-    glideSlider.on("run.after", applyAnimation);
-
     glideSlider.mount();
 
     return () => {
@@ -55,8 +29,8 @@ const Slider = ({ loading }) => {
               <div className="container">
                 <div className="bannerText">
                   <div className="title">
-                    <h3>{slide.title}</h3>
-                    <h5>{slide.subTitle}</h5>
+                    <h1>{slide.title}</h1>
+                    <h3>{slide.subTitle}</h3>
                   </div>
                 </div>
               </div>
