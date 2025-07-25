@@ -11,9 +11,9 @@ const Iletisim = () => {
         <div className="content">
           <div className="map">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.8088212526977!2d26.403226275703272!3d40.146542072040084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b1a9c2372acca7%3A0xee140f62509738b4!2sDetay%20Peyzaj!5e0!3m2!1str!2str!4v1749902238687!5m2!1str!2str"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.727291076892!2d26.403508375703286!3d40.14835797193013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b1a92701400185%3A0xc31f7bd21fd65cfb!2se-360%20Dijital!5e0!3m2!1str!2str!4v1753443077078!5m2!1str!2str"
               className="iframe"
-              style={{ border: "0px" }}
+              style={{ border: "0" }}
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
