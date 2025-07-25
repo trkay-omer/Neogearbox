@@ -1,0 +1,19 @@
+{
+  "dataSlider": [
+    {
+      "img": "/images/slider/slider 3.jpg",
+      "title": "Güç Aktarımında",
+      "subTitle": "Lider Çözüm Ortağınız"
+    },
+    {
+      "img": "/images/slider/slider 2.jpg",
+      "title": "Endüstriyel Verimlilik",
+      "subTitle": "Redüktör ile Başlar"
+    },
+    {
+      "img": "/images/slider/slider 1.jpg",
+      "title": "Her Dönüşte",
+      "subTitle": "Güven ve Kalite"
+    }
+  ]
+}

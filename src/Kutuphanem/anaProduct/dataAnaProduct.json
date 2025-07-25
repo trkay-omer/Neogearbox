@@ -1,0 +1,14 @@
+{
+  "dataAnaProduct": {
+    "yImg": "/images/anasayfa/mobil.png",
+    "xImg": "/images/anasayfa/kolaj.png",
+    "topSmallTitle": "| Gücü mühendislikle birleştiriyoruz!",
+    "titleFull": "Bir mühendislik hikayesi...",
+    "titleItalic": "Güven ve performans",
+    "titleDev": "",
+    "titleDev2": "sağlayan redüktör çözümleri sunuyoruz.",
+    "desc": "Redüktör üretimi ve güç aktarım sistemlerinde yılların verdiği tecrübeyle, sanayiye özel yüksek verimli ve dayanıklı çözümler geliştiriyoruz. Kalite standartlarımızla işletmenizin gücüne güç katıyoruz.",
+    "link": "/kategoriler",
+    "buttonText": "Ürünlerimizi İncele"
+  }
+}

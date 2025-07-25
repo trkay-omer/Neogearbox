@@ -1,0 +1,20 @@
+{
+  "faqs": [
+    {
+      "question": "Redüktör projelerinde kalite ve güvenilirlik nasıl sağlanır?",
+      "answer": "Kalite ve güvenilirliği sağlamak için üretim sürecinde uluslararası standartlara uygunluk gözetilir, her ürün ileri düzey kalite kontrol testlerinden geçirilir. Mühendislik tasarımları detaylı analizlerle hazırlanır, üretim sonrası performans testleri titizlikle uygulanır."
+    },
+    {
+      "question": "Redüktör seçiminde ihtiyaçlara özel çözümler nasıl sunuluyor?",
+      "answer": "Her proje için yük, hız, tork ve çevresel koşullar analiz edilerek en uygun redüktör tipi belirlenir. Gerekli durumlarda özel tasarım ve mühendislik desteğiyle tamamen projeye özel çözümler geliştirilir. Böylece maksimum verim ve uzun ömür sağlanır."
+    },
+    {
+      "question": "Hangi ürün ve hizmetleri sunuyorsunuz, özel projeler yapılıyor mu?",
+      "answer": "Helisel, sonsuz, planet, konik dişli redüktörler ve motorlu sistemler sunuyoruz. Ayrıca, sektörel ihtiyaçlara özel proje danışmanlığı, tasarım ve üretim hizmetleriyle kurumlara özel çözümler geliştiriyoruz."
+    },
+    {
+      "question": "Satış sonrası destek ve bakım hizmetleri nasıl sağlanıyor?",
+      "answer": "Tüm ürünlerimiz için teknik destek, yedek parça temini ve bakım hizmetleri sunuyoruz. Periyodik bakım, arıza teşhis ve onarım işlemleri profesyonel teknik ekiplerimiz tarafından yapılır. Müşterilerimize ayrıca kullanım kılavuzu, bakım planları ve eğitim desteği verilir."
+    }
+  ]
+}

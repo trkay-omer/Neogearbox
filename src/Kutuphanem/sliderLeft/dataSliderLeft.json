@@ -1,0 +1,14 @@
+{
+  "kategori": [
+    {
+      "img": "/images/postImg/urunler.jpg",
+      "title": "Ürünlerimiz",
+      "to": "/kategoriler"
+    },
+    {
+      "img": "/images/postImg/kurumsal.jpeg",
+      "title": "Kurumsal",
+      "to": "/kurumsal"
+    }
+  ]
+}

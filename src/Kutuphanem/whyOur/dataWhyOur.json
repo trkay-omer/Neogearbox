@@ -1,0 +1,11 @@
+{
+  "title": "Neden Biz",
+  "desc": "Türkiye’nin dört bir yanındaki sanayi tesislerine güçlü, dayanıklı ve yüksek verimli redüktör çözümleri sunuyoruz. Tasarımdan üretime, montajdan satış sonrası desteğe kadar her aşamada kalite, mühendislik ve güven odaklı çalışıyoruz.",
+  "iconImg": "/images/Icon/question-mark.png",
+  "posts": [
+    { "img": "grup.jpg", "title": "Ar-Ge'ye Odaklılık" },
+    { "img": "disli.jpg", "title": "Özel Proje Tasarımları" },
+    { "img": "uretim.jpg", "title": "Yüksek Kalite Üretim" },
+    { "img": "guy.jpg", "title": "Geniş Ürün Yelpazesi" }
+  ]
+}
