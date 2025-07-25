@@ -46,7 +46,7 @@ const AdminProjeDuzenle = () => {
         );
         if (response.status === 200) {
           setCategories(responseCategories.data);
-
+          console.log(response.data);
           setFormData((prevState) => ({
             ...prevState,
 
@@ -57,9 +57,10 @@ const AdminProjeDuzenle = () => {
           }));
           setImgKapak(response.data.coverImage);
           setImages(response.data.images);
-          // Buraya pdf
+          setPdf(response.data.pdf);
           setInitialKapakImages(response.data.coverImage);
           setInitialImages(response.data.images);
+          setInitialPdf(response.data.pdf);
           // Buraya pdf
 
           setTimeout(() => {
@@ -324,7 +325,12 @@ const AdminProjeDuzenle = () => {
                   </label>
                 </div>
 
-                <div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                  }}
+                >
                   <label>
                     PDF:
                     <input
@@ -338,6 +344,21 @@ const AdminProjeDuzenle = () => {
                       required
                     />
                   </label>
+
+                  {typeof pdf === "object" && pdf !== null && pdf.name ? (
+                    <p style={{ alignSelf: "flex-end", marginTop: "20px" }}>
+                      Yeni seçilen dosya: {pdf.name}
+                    </p>
+                  ) : pdf && pdf.filename ? (
+                    <a
+                      href={pdf.filename}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ alignSelf: "flex-end", marginTop: "20px" }}
+                    >
+                      Mevcut PDF'yi Görüntüle
+                    </a>
+                  ) : null}
                 </div>
 
                 <div>

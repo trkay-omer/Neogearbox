@@ -1,7 +1,7 @@
 import "./NameAndMarka.scss";
 import data from "../../../data.json";
 
-const NameAndMarka = ({ marka, name, desc }) => {
+const NameAndMarka = ({ marka, name, desc, pdf }) => {
   return (
     <div className="nameAndMarka">
       <span className="marka">{marka}</span>
@@ -26,6 +26,15 @@ const NameAndMarka = ({ marka, name, desc }) => {
             className="btnSepet green"
           >
             Whatsapp Mesaj
+          </a>
+          <a
+            href={pdf?.filename}
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btnSepet red"
+          >
+            PDF İndir
           </a>
         </div>
       </div>

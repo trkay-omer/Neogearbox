@@ -34,6 +34,8 @@ const PaketDetay = () => {
     fetchData();
   }, [id]);
 
+  console.log(productDetail);
+
   const handleImageClick = (image) => {
     setSelectedImage(image.filename); // Yeni resmi güncelle
   };
@@ -81,6 +83,7 @@ const PaketDetay = () => {
             <div className="rightActionSide">
               <NameAndMarka
                 marka={"Detay Peyzaj"}
+                pdf={productDetail.pdf}
                 name={productDetail.title}
                 desc={productDetail.titleContent}
               />
