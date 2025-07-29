@@ -1,8 +1,32 @@
 {
   "dataCounts": [
-    { "count": "1000+", "nicelik": "Endüstriyel Proje" },
-    { "count": "150+", "nicelik": "Redüktör Çözümü" },
-    { "count": "500+", "nicelik": "Memnun Sanayi Müşterisi" },
-    { "count": "30+", "nicelik": "Yıllık Endüstri Deneyimi" }
+    {
+      "count": "1000+",
+      "nicelik": {
+        "tr": "Endüstriyel Proje",
+        "en": "Industrial Projects"
+      }
+    },
+    {
+      "count": "150+",
+      "nicelik": {
+        "tr": "Redüktör Çözümü",
+        "en": "Gearbox Solutions"
+      }
+    },
+    {
+      "count": "500+",
+      "nicelik": {
+        "tr": "Memnun Sanayi Müşterisi",
+        "en": "Satisfied Industrial Clients"
+      }
+    },
+    {
+      "count": "30+",
+      "nicelik": {
+        "tr": "Yıllık Endüstri Deneyimi",
+        "en": "Years of Industrial Experience"
+      }
+    }
   ]
 }

@@ -1,16 +1,28 @@
 {
-  "title": "İyi iş iyi ekipten çıkar",
-  "desc": "Her üründe kaliteyi ve güveni önceliklendirerek, iş ortaklarımızın üretim süreçlerine değer katmayı hedefliyoruz.",
+  "title": {
+    "tr": "İyi iş iyi ekipten çıkar",
+    "en": "Good work comes from a good team"
+  },
+  "desc": {
+    "tr": "Her üründe kaliteyi ve güveni önceliklendirerek, iş ortaklarımızın üretim süreçlerine değer katmayı hedefliyoruz.",
+    "en": "By prioritizing quality and trust in every product, we aim to add value to our partners' production processes."
+  },
   "founderData": [
     {
       "img": "/images/acardion/1.jpg",
       "name": "Hasan H. Yıldırım",
-      "job": "Co-Founder"
+      "job": {
+        "tr": "Kurucu Ortak",
+        "en": "Co-Founder"
+      }
     },
     {
       "img": "/images/acardion/2.jpg",
       "name": "Hüseyin Elbilek",
-      "job": "Co-Founder"
+      "job": {
+        "tr": "Kurucu Ortak",
+        "en": "Co-Founder"
+      }
     }
   ]
 }

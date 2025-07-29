@@ -1,15 +1,33 @@
 {
   "dataCategoryTwo": [
     {
-      "title": "Kategori 1",
-      "desc": "Daha fazlası için lütfen ürünlerimiz inceleyin",
-      "buttonText": "Tümünü Gör",
+      "title": {
+        "tr": "Kategori 1",
+        "en": "Category 1"
+      },
+      "desc": {
+        "tr": "Daha fazlası için lütfen ürünlerimiz inceleyin",
+        "en": "For more, please check our products"
+      },
+      "buttonText": {
+        "tr": "Tümünü Gör",
+        "en": "View All"
+      },
       "img": "/images/anasayfa/K1.png"
     },
     {
-      "title": "Kategori 2",
-      "desc": "Daha fazlası için lütfen ürünlerimiz inceleyin",
-      "buttonText": "Tümünü Gör",
+      "title": {
+        "tr": "Kategori 2",
+        "en": "Category 2"
+      },
+      "desc": {
+        "tr": "Daha fazlası için lütfen ürünlerimiz inceleyin",
+        "en": "For more, please check our products"
+      },
+      "buttonText": {
+        "tr": "Tümünü Gör",
+        "en": "View All"
+      },
       "img": "/images/anasayfa/K2.png"
     }
   ]

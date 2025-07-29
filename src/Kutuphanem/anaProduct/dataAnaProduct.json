@@ -2,13 +2,34 @@
   "dataAnaProduct": {
     "yImg": "/images/anasayfa/mobil.png",
     "xImg": "/images/anasayfa/kolaj.png",
-    "topSmallTitle": "| Gücü mühendislikle birleştiriyoruz!",
-    "titleFull": "Bir mühendislik hikayesi...",
-    "titleItalic": "Güven ve performans",
-    "titleDev": "",
-    "titleDev2": "sağlayan redüktör çözümleri sunuyoruz.",
-    "desc": "Redüktör üretimi ve güç aktarım sistemlerinde yılların verdiği tecrübeyle, sanayiye özel yüksek verimli ve dayanıklı çözümler geliştiriyoruz. Kalite standartlarımızla işletmenizin gücüne güç katıyoruz.",
+    "topSmallTitle": {
+      "tr": "| Gücü mühendislikle birleştiriyoruz!",
+      "en": "| We combine power with engineering!"
+    },
+    "titleFull": {
+      "tr": "Bir mühendislik hikayesi...",
+      "en": "An engineering story..."
+    },
+    "titleItalic": {
+      "tr": "Güven ve performans",
+      "en": "Trust and performance"
+    },
+    "titleDev": {
+      "tr": "",
+      "en": ""
+    },
+    "titleDev2": {
+      "tr": "sağlayan redüktör çözümleri sunuyoruz.",
+      "en": "offering gearbox solutions that deliver."
+    },
+    "desc": {
+      "tr": "Redüktör üretimi ve güç aktarım sistemlerinde yılların verdiği tecrübeyle, sanayiye özel yüksek verimli ve dayanıklı çözümler geliştiriyoruz. Kalite standartlarımızla işletmenizin gücüne güç katıyoruz.",
+      "en": "With years of experience in gearbox manufacturing and power transmission systems, we develop high-efficiency and durable solutions tailored to the industry. Our quality standards strengthen your business."
+    },
     "link": "/kategoriler",
-    "buttonText": "Ürünlerimizi İncele"
+    "buttonText": {
+      "tr": "Ürünlerimizi İncele",
+      "en": "Explore Our Products"
+    }
   }
 }

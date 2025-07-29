@@ -3,15 +3,18 @@ import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/Email";
 import data from "../../data.json";
-
+import { useLang } from "../../langContext.jsx";
+import iletisimData from "./iletisimData.json";
 const Iletisim = () => {
+  const { lang } = useLang();
+
   return (
     <div className="iletisim">
       <div className="container">
         <div className="content">
           <div className="map">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.727291076892!2d26.403508375703286!3d40.14835797193013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b1a92701400185%3A0xc31f7bd21fd65cfb!2se-360%20Dijital!5e0!3m2!1str!2str!4v1753443077078!5m2!1str!2str"
+              src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.727291076892!2d26.403508375703286!3d40.14835797193013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b1a92701400185%3A0xc31f7bd21fd65cfb!2se-360%20Dijital!5e0!3m2!1str!2str!4v1753443077078!5m2!1str!2s${lang}`}
               className="iframe"
               style={{ border: "0" }}
               allowfullscreen=""
@@ -22,12 +25,12 @@ const Iletisim = () => {
 
           <div className="infoIletisim">
             <div className="itemIletisim">
-              <h3>Adres Bilgilerimiz</h3>
-              <p>{data.adres}</p>
+              <h3>{iletisimData.titleAdres[lang]}</h3>
+              <p>{data.adres[lang]}</p>
             </div>
 
             <div className="itemIletisim">
-              <h3>Telefon Numaralarımız</h3>
+              <h3>{iletisimData.titleTelefon[lang]}</h3>
               <div className="itemList">
                 <LocalPhoneIcon />
                 <p>
@@ -37,7 +40,7 @@ const Iletisim = () => {
             </div>
 
             <div className="itemIletisim">
-              <h3>Medya Hesaplarımız</h3>
+              <h3>{iletisimData.titleMedya[lang]}</h3>
               <div className="medyas">
                 <a href={data.mail_linki} className="itemList">
                   <EmailIcon />
@@ -56,15 +59,15 @@ const Iletisim = () => {
             </div>
 
             <div className="itemIletisim">
-              <h3>Mesai Saatlerimiz</h3>
+              <h3>{iletisimData.titleMesai[lang]}</h3>
               <div className="medyas">
                 <div className="itemList">
-                  <h4>Haftaiçi:</h4>
-                  <p>{data.haftaIcı}</p>
+                  <h4>{iletisimData.titleHaftaIcı[lang]}</h4>
+                  <p>{data.haftaIcı[lang]}</p>
                 </div>
                 <div className="itemList">
-                  <h4>Hafta Sonu:</h4>
-                  <p>{data.haftaSonu}</p>
+                  <h4>{iletisimData.titleHaftasonu[lang]}</h4>
+                  <p>{data.haftaSonu[lang]}</p>
                 </div>
               </div>
             </div>

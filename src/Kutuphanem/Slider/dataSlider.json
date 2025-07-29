@@ -2,18 +2,36 @@
   "dataSlider": [
     {
       "img": "/images/slider/slider 1.jpg",
-      "title": "Güç aktarımında",
-      "subTitle": "Lider Çözüm Ortağınız"
+      "title": {
+        "tr": "Güç aktarımında",
+        "en": "In Power Transmission"
+      },
+      "subTitle": {
+        "tr": "Lider Çözüm Ortağınız",
+        "en": "Your Leading Solution Partner"
+      }
     },
     {
       "img": "/images/slider/slider 2.jpg",
-      "title": "Endüstriyel Verimlilik",
-      "subTitle": "Redüktör ile başlar"
+      "title": {
+        "tr": "Endüstriyel Verimlilik",
+        "en": "Industrial Efficiency"
+      },
+      "subTitle": {
+        "tr": "Redüktör ile başlar",
+        "en": "Starts with Gearbox"
+      }
     },
     {
       "img": "/images/slider/slider 3.jpg",
-      "title": "Her Dönüşte",
-      "subTitle": "Güven ve Kalite"
+      "title": {
+        "tr": "Her Dönüşte",
+        "en": "At Every Turn"
+      },
+      "subTitle": {
+        "tr": "Güven ve Kalite",
+        "en": "Trust and Quality"
+      }
     }
   ]
 }

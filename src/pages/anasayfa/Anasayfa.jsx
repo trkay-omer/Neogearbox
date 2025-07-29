@@ -44,11 +44,7 @@ const Anasayfa = () => {
   }
 
   const sections2 = [
-    <PopulerProduct
-      title={"Ürünlerimiz"}
-      desc={"Tümü için ürünlerimiz sayfasına göz atın"}
-      products={projeler}
-    />,
+    <PopulerProduct products={projeler} />,
     <WhoFounder />,
     <WhyOur loading={loading} />,
   ];

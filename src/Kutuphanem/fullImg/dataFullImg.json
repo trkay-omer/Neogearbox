@@ -1,8 +1,17 @@
 {
   "dataFullImg": {
-    "title": "Ürünlerimizi Görün",
-    "desc": "Her şey sizler için",
-    "buttonText": "Ürünlerimize Git",
+    "title": {
+      "tr": "Ürünlerimizi Görün",
+      "en": "See Our Products"
+    },
+    "desc": {
+      "tr": "Her şey sizler için",
+      "en": "Everything is for you"
+    },
+    "buttonText": {
+      "tr": "Ürünlerimize Git",
+      "en": "Go to Our Products"
+    },
     "link": "/kategoriler"
   }
 }

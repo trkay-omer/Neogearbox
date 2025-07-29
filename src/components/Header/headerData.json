@@ -1,0 +1,10 @@
+{
+  "searchPlaceHolder": {
+    "tr": "Aramak için yazın...",
+    "en": "Type to search..."
+  },
+  "searchContentCount": {
+    "tr": "Bulunan Ürün:",
+    "en": "Found Product:"
+  }
+}

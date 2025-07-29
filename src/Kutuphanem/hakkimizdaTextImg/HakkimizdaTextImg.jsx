@@ -1,7 +1,6 @@
 import "./HakkimizdaTextImg.scss";
 
-import { title1, title2, text1, text2, text3, text4 } from "./dataTextImg.json";
-const HakkimizdaTextImg = () => {
+const HakkimizdaTextImg = ({ title1, title2, text1, text2, text3, text4 }) => {
   return (
     <div className="container">
       <div className="contentHakkimizda">

@@ -4,8 +4,12 @@ import "./Categories.scss";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { BASE_URL } from "../../config/api";
+import { useLang } from "../../langContext";
+import Loading from "../loading/Loading";
+import { title, subTitle } from "./categoriesData.json";
 
 const Categories = () => {
+  const { lang } = useLang();
   const [isLoading, setIsLoading] = useState(false);
   const [categoryies, setCategoryies] = useState([]);
 
@@ -25,13 +29,14 @@ const Categories = () => {
     fetchCategories();
   }, []);
 
+  if (isLoading) {
+    return <Loading />;
+  }
+
   return (
     <div className="categoriesPage">
       <div className="container">
-        <Baslik
-          title={"Proje Kategorileri"}
-          desc={"Lütfen bir kategori seçin!"}
-        />
+        <Baslik title={title[lang]} desc={subTitle[lang]} />
         <div className="categoryCardsContent">
           {categoryies.map((item, index) => (
             <CategoryCard

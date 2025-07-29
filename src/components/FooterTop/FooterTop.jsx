@@ -2,8 +2,11 @@ import MapIcon from "@mui/icons-material/Map";
 import PhoneIcon from "@mui/icons-material/Phone";
 import "./FooterTop.scss";
 import data from "../../data.json";
+import { useLang } from "../../langContext.jsx";
+import footerTopData from "./footerTopData.json";
 
 const FooterTop = () => {
+  const { lang } = useLang();
   return (
     <div className="dikkat">
       <div className="container dikkatItems">
@@ -11,14 +14,13 @@ const FooterTop = () => {
           <PhoneIcon fontSize="large" className="iconDikkat" />
 
           <div className="infoDikkat">
-            <h3>Bizlere Ulaşın: {data.telefon}</h3>
-            <p>
-              Yukarıdaki telefon numarası ile gönül rahatlığıyla iletişim
-              kurabilirsiniz.
-            </p>
+            <h3>
+              {footerTopData.titleLeft[lang]} {data.telefon}
+            </h3>
+            <p>{footerTopData.descLeft[lang]}</p>
             <div>
               <a href={data.telefon_linki}>
-                <button>Hemen Ara</button>
+                <button>{footerTopData.buttonLeftText[lang]}</button>
               </a>
             </div>
           </div>
@@ -28,11 +30,11 @@ const FooterTop = () => {
           <MapIcon fontSize="large" className="iconDikkat" />
 
           <div className="infoDikkat">
-            <h3>Adres İçin</h3>
-            <p>{data.adres}</p>
+            <h3>{footerTopData.titleRight[lang]}</h3>
+            <p>{data.adres[lang]}</p>
             <div>
               <a target="_blank" href={data.adres_linki}>
-                <button>Yol Tarifi Al</button>
+                <button>{footerTopData.butonRightText[lang]}</button>
               </a>
             </div>
           </div>

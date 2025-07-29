@@ -1,14 +1,17 @@
 import Baslik from "../baslik/Baslik";
 import ProjelerGlide from "./ProjerlerGlide/ProjelerGlide";
 import "./PopulerProduct.scss";
+import { useLang } from "../../langContext.jsx";
+import data from "./PopulerProductData.json";
 
-const PopulerProduct = ({ title, desc, products }) => {
+const PopulerProduct = ({ products }) => {
+  const { lang } = useLang();
   return (
     <div className="bestTeam">
       <div className="container">
         <div className="content">
           <div className="left">
-            <Baslik title={title} desc={desc} />
+            <Baslik title={data.title[lang]} desc={data.desc[lang]} />
           </div>
           <hr />
           <div className="TeamlistCards">

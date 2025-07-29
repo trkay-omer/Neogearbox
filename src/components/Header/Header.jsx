@@ -10,21 +10,26 @@ import SearchIcon from "@mui/icons-material/Search";
 import data from "../../data.json";
 import SearchCard from "../SearchCard/SearchCard";
 import { BASE_URL } from "../../config/api";
+import { useTranslation } from "../../useTranslation";
+import { useLang } from "../../langContext.jsx";
+import { searchPlaceHolder, searchContentCount } from "./headerData.json";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [products, setProducts] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+  const { t } = useTranslation();
+  const { lang } = useLang();
 
   const location = useLocation();
   const menuCloseDelay = 300; // ms
 
   const navigationData = [
-    { to: "/", label: "Anasayfa" },
-    { to: "/kategoriler", label: "Ürünlerimiz" },
-    { to: "/kurumsal", label: "Kurumsal" },
-    { to: "/iletisim", label: "İletişim" },
+    { to: "/", label: t("header.home") },
+    { to: "/kategoriler", label: t("header.products") },
+    { to: "/kurumsal", label: t("header.about") },
+    { to: "/iletisim", label: t("header.contact") },
   ];
 
   useEffect(() => {
@@ -66,7 +71,7 @@ const Header = () => {
         <div className="container">
           <div className="headerTopWrapper">
             <div className={`slogan ${isSearchOpen ? "hide-mobile" : ""}`}>
-              <span>{data.headerTopText}</span>
+              <span>{data.headerTopText[lang]}</span>
             </div>
 
             {isSearchOpen && <div></div>}
@@ -76,13 +81,13 @@ const Header = () => {
                 <input
                   type="text"
                   className="searchInput"
-                  placeholder="Aramak için yazın..."
+                  placeholder={searchPlaceHolder[lang]}
                   autoFocus
                   value={searchTerm}
                   onChange={handleSearchChange}
                 />
               ) : (
-                <span className="none">Bizlerle iletişime geçin</span>
+                <span className="none">{data.headerTopText2[lang]}</span>
               )}
 
               <button
@@ -143,7 +148,9 @@ const Header = () => {
               <div className="container">
                 <div className="searchContent">
                   <div className="topSearchh">
-                    <span>Bulunan Ürün: {products.length}</span>
+                    <span>
+                      {searchContentCount[lang]} {products.length}
+                    </span>
                     <button
                       className="closeButton"
                       onClick={() => {

@@ -1,12 +1,10 @@
 import CardItem from "./cardItem/CardItem";
 import "./TwoCategory.scss";
 import { dataCategoryTwo } from "./twoData.json";
+import { useLang } from "../../langContext.jsx";
 
 const TwoCategory = () => {
-  //   const dataSliderOrnek = [
-  //     { title: "title", desc: "desc", buttonText: "buttonText", img: "img" },
-  //     { title: "title", desc: "desc", buttonText: "buttonText", img: "img" },
-  //   ];
+  const { lang } = useLang();
 
   return (
     <div>
@@ -14,9 +12,9 @@ const TwoCategory = () => {
         <div className="product-cards">
           {dataCategoryTwo.map((card, index) => (
             <CardItem
-              title={card.title}
-              desc={card.desc}
-              buttonText={card.buttonText}
+              title={card.title[lang]}
+              desc={card.desc[lang]}
+              buttonText={card.buttonText[lang]}
               img={card.img}
               key={`${index}.cardItem`}
             />

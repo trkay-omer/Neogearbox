@@ -5,8 +5,10 @@ import { useAuth } from "../../context/AuthContext";
 import axios from "axios";
 import { BASE_URL } from "../../config/api";
 import data from "../../data.json";
+import { useLang } from "../../langContext.jsx";
 
 const AdminLogin = () => {
+  const { lang } = useLang();
   const [formData, setFormData] = useState({ username: "", password: "" });
   const [error, setError] = useState("");
   const { login, isAuthenticated } = useAuth(); // Kullanıcının giriş durumu
@@ -88,7 +90,7 @@ const AdminLogin = () => {
           </div>
           <div className="loginSectionRight">
             <div className="title">
-              <h4>{data.magazaIsmi} Yönetim Paneli</h4>
+              <h4>{data.magazaIsmi[lang]} Yönetim Paneli</h4>
             </div>
           </div>
         </div>

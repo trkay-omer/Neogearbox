@@ -3,8 +3,12 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import MapIcon from "@mui/icons-material/Map";
 import PhoneIcon from "@mui/icons-material/Phone";
 import data from "../../data.json";
+import { useLang } from "../../langContext.jsx";
+import FooterData from "./FooterData.json";
 
 const Footer = () => {
+  const { lang } = useLang();
+
   return (
     <footer className="footer">
       <div className="container">
@@ -15,15 +19,15 @@ const Footer = () => {
             </a>
           </div>
           <div className="metin">
-            <p>{data.footerDesc}</p>
+            <p>{data.footerDesc[lang]}</p>
           </div>
         </div>
 
         <div className="footerItem">
-          <h3>Ürün Gamımız</h3>
+          <h3>{FooterData.title1[lang]}</h3>
           <hr />
           <ul className="footerHizmet">
-            {data.kategoriler.map((item, index) => (
+            {data.kategoriler[lang].map((item, index) => (
               <li key={index}>
                 <span>{item}</span>
               </li>
@@ -32,7 +36,7 @@ const Footer = () => {
         </div>
 
         <div className="footerItem">
-          <h3>İletişim Bilgilerimiz</h3>
+          <h3>{FooterData.title2[lang]}</h3>
           <hr />
           <ul>
             <li className="sag">
@@ -65,7 +69,7 @@ const Footer = () => {
                 href={data.adres_linki}
               >
                 <MapIcon />
-                <span>{data.adres}</span>
+                <span>{data.adres[lang]}</span>
               </a>
             </li>
           </ul>
@@ -76,7 +80,7 @@ const Footer = () => {
 
       <div className="container">
         <p style={{ fontSize: "0.85rem" }}>
-          Copyright 2025 © {data.magazaIsmi}. Bütün Hakları Saklıdır.
+          Copyright 2025 © {data.magazaIsmi[lang]}. {FooterData.copyRight[lang]}
         </p>
       </div>
     </footer>

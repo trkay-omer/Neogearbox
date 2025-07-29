@@ -4,8 +4,10 @@ import "./WhyOur.scss";
 import WhyOurItem from "./WhyOutItem/WhyOurItem";
 import { posts, iconImg, desc, title } from "./dataWhyOur.json";
 import Counts from "../countSayi/Counts";
+import { useLang } from "../../langContext";
 
 const WhyOur = ({ loading }) => {
+  const { lang } = useLang();
   useEffect(() => {
     if (!loading) {
       const glidePosts = new Glide(".glide-posts", {
@@ -32,11 +34,11 @@ const WhyOur = ({ loading }) => {
     <div className="container">
       <div className="altKısım">
         <div className="anaBaslik">
-          <h3 className="anaTitle">{title}</h3>
+          <h3 className="anaTitle">{title[lang]}</h3>
           <img src={iconImg} alt="Neden Biz" />
 
           <div className="anaDesc">
-            <p>{desc}</p>
+            <p>{desc[lang]}</p>
           </div>
           <Counts />
         </div>

@@ -21,40 +21,43 @@ import ScrollToTop from "./components/scrollTop/ScrollToTop.jsx";
 import AdminCategoryCreate from "./pages/adminPanel/AdminCategoryCreate.jsx";
 import AdminCategoryEdit from "./pages/adminPanel/AdminCategoryEdit.jsx";
 import PaketDetay from "./pages/PaketDetay/PaketDetay.jsx";
+import { LangProvider } from "./langContext.jsx";
 
 function App() {
   return (
     <AuthProvider>
-      <Header />
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<Anasayfa />} />
-        <Route path="/kategoriler" element={<Categories />} />
-        <Route path="/kategoriler/:linkName" element={<Projeler />} />
-        <Route path="/urunler/:id" element={<PaketDetay />} />
-        <Route path="/iletisim" element={<Iletisim />} />
-        <Route path="/kurumsal" element={<Hakkimizda />} />
-        <Route path="/admin-login" element={<AdminLogin />} />
+      <LangProvider>
+        <Header />
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Anasayfa />} />
+          <Route path="/kategoriler" element={<Categories />} />
+          <Route path="/kategoriler/:linkName" element={<Projeler />} />
+          <Route path="/urunler/:id" element={<PaketDetay />} />
+          <Route path="/iletisim" element={<Iletisim />} />
+          <Route path="/kurumsal" element={<Hakkimizda />} />
+          <Route path="/admin-login" element={<AdminLogin />} />
 
-        <Route
-          path="/admin"
-          element={
-            <ProtectedRoute>
-              <AdminDashboard />
-            </ProtectedRoute>
-          }
-        >
-          <Route path="ekle" element={<AdminProjeEkle />} />
-          <Route path="urunler" element={<AdminProjeler />} />
-          <Route path="urunler/:id" element={<AdminProjeDuzenle />} />
-          <Route path="kategoriekle" element={<AdminCategoryCreate />} />
-          <Route path="kategoriduzenle" element={<AdminCategoryEdit />} />
-          <Route path="urunler" element={<AdminProjeler />} />
-        </Route>
-        <Route path="/unauthorized" element={<Unauthorized />} />
-      </Routes>
-      <FooterTop />
-      <Footer />
+          <Route
+            path="/admin"
+            element={
+              <ProtectedRoute>
+                <AdminDashboard />
+              </ProtectedRoute>
+            }
+          >
+            <Route path="ekle" element={<AdminProjeEkle />} />
+            <Route path="urunler" element={<AdminProjeler />} />
+            <Route path="urunler/:id" element={<AdminProjeDuzenle />} />
+            <Route path="kategoriekle" element={<AdminCategoryCreate />} />
+            <Route path="kategoriduzenle" element={<AdminCategoryEdit />} />
+            <Route path="urunler" element={<AdminProjeler />} />
+          </Route>
+          <Route path="/unauthorized" element={<Unauthorized />} />
+        </Routes>
+        <FooterTop />
+        <Footer />
+      </LangProvider>
     </AuthProvider>
   );
 }

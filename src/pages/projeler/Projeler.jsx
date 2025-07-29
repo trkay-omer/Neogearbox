@@ -8,8 +8,11 @@ import SideBar from "../../Kutuphanem/urunler/sidebar/SideBar";
 import List from "../../Kutuphanem/urunler/list/List";
 import { useNavigate, useParams } from "react-router-dom";
 import CategoryName from "../../Kutuphanem/categoryName/CategoryName";
+import { useLang } from "../../langContext";
+import { sideBarTitle, listTitle } from "./projelerData.json";
 
 const Projeler = () => {
+  const { lang } = useLang();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [projeler, setProjeler] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -81,6 +84,7 @@ const Projeler = () => {
             selectedCategoryName={selectedCategory?.name}
             filterByRoomCount={filterByRoomCount}
             sidebarOpen={sidebarOpen}
+            sideBarTitle={sideBarTitle[lang]}
           />
 
           <div className="contentProjelerRight">
@@ -88,6 +92,7 @@ const Projeler = () => {
               projeler={projeler}
               currentItems={currentItems}
               toggleSidebar={toggleSidebar}
+              listTitle={listTitle[lang]}
             />
 
             <Pagination

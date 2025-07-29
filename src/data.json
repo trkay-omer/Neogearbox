@@ -1,7 +1,20 @@
 {
-  "headerTopText": "Bir mühendislik hikayesi...",
-  "magazaIsmi": "Günal Redüktör",
-  "adres": "Floor 1-2, No. 7, Lane 1088, Mingcheng Road, Shanghai, China",
+  "headerTopText": {
+    "tr": "Bir mühendislik hikayesi...",
+    "en": "An engineering story..."
+  },
+  "headerTopText2": {
+    "tr": "Formu Doldurunuz",
+    "en": "Fill out the form"
+  },
+  "magazaIsmi": {
+    "tr": "Günal Redüktör",
+    "en": "Gunal Gearbox"
+  },
+  "adres": {
+    "tr": "Floor 1-2, No. 7, Lane 1088, Mingcheng Road, Shanghai, China",
+    "en": "Floor 1-2, No. 7, Lane 1088, Mingcheng Road, Shanghai, China"
+  },
   "adres_linki": "https://maps.app.goo.gl/d8nV6nVgAokmanGearbox",
   "instagram": "@aokman_gearbox",
   "instagram_linki": "https://www.instagram.com/aokman_gearbox/",
@@ -10,13 +23,29 @@
   "whatsapp_linki": "https://wa.me/8618736055280",
   "mail": "aokman@aokman-gearbox.com",
   "mail_linki": "mailto:aokman@aokman-gearbox.com",
-  "footerDesc": "Firmamız, yüksek performanslı, dayanıklı ve mühendislik odaklı redüktör çözümleri sunan lider bir markadır. Endüstriyel ihtiyaçlara özel geliştirilen sistemlerimizle verimliliği artırır, üretim süreçlerinize güç katarız.",
-  "kategoriler": [
-    "Yüksek Verimli Güç Aktarım Sistemleri",
-    "Endüstriyel Uygulamalara Özel Tasarımlar",
-    "Dayanıklı, Güvenilir ve Mühendislik Odaklı Çözümler"
-  ],
+  "footerDesc": {
+    "tr": "Firmamız, yüksek performanslı, dayanıklı ve mühendislik odaklı redüktör çözümleri sunan lider bir markadır. Endüstriyel ihtiyaçlara özel geliştirilen sistemlerimizle verimliliği artırır, üretim süreçlerinize güç katarız.",
+    "en": "Our company is a leading brand offering high-performance, durable and engineering-focused gearbox solutions. With systems specially developed for industrial needs, we increase efficiency and empower your production processes."
+  },
+  "kategoriler": {
+    "tr": [
+      "Yüksek Verimli Güç Aktarım Sistemleri",
+      "Endüstriyel Uygulamalara Özel Tasarımlar",
+      "Dayanıklı, Güvenilir ve Mühendislik Odaklı Çözümler"
+    ],
+    "en": [
+      "High-Efficiency Power Transmission Systems",
+      "Custom Designs for Industrial Applications",
+      "Durable, Reliable and Engineering-Focused Solutions"
+    ]
+  },
   "logo": "/images/logo/logo5.png",
-  "haftaIcı": "08.00 - 19.00",
-  "haftaSonu": "08.00 - 19.01"
+  "haftaIcı": {
+    "tr": "08.00 - 19.00",
+    "en": "08.00 AM - 07.00 PM"
+  },
+  "haftaSonu": {
+    "tr": "08.00 - 19.01",
+    "en": "08.00 AM - 07.01 PM"
+  }
 }

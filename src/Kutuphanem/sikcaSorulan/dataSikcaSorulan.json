@@ -1,20 +1,52 @@
 {
+  "title": {
+    "tr": "Sıkça Sorulanlar",
+    "en": "Frequently Asked Questions"
+  },
+  "subTitle": {
+    "tr": "Siz sorun biz cevaplayalım",
+    "en": "You ask, we answer"
+  },
   "faqs": [
     {
-      "question": "Redüktör projelerinde kalite ve güvenilirlik nasıl sağlanır?",
-      "answer": "Kalite ve güvenilirliği sağlamak için üretim sürecinde uluslararası standartlara uygunluk gözetilir, her ürün ileri düzey kalite kontrol testlerinden geçirilir. Mühendislik tasarımları detaylı analizlerle hazırlanır, üretim sonrası performans testleri titizlikle uygulanır."
+      "question": {
+        "tr": "Redüktör projelerinde kalite ve güvenilirlik nasıl sağlanır?",
+        "en": "How is quality and reliability ensured in gearbox projects?"
+      },
+      "answer": {
+        "tr": "Kalite ve güvenilirliği sağlamak için üretim sürecinde uluslararası standartlara uygunluk gözetilir, her ürün ileri düzey kalite kontrol testlerinden geçirilir. Mühendislik tasarımları detaylı analizlerle hazırlanır, üretim sonrası performans testleri titizlikle uygulanır.",
+        "en": "To ensure quality and reliability, compliance with international standards is maintained throughout the production process, and each product undergoes advanced quality control tests. Engineering designs are prepared with detailed analyses, and post-production performance tests are applied meticulously."
+      }
     },
     {
-      "question": "Redüktör seçiminde ihtiyaçlara özel çözümler nasıl sunuluyor?",
-      "answer": "Her proje için yük, hız, tork ve çevresel koşullar analiz edilerek en uygun redüktör tipi belirlenir. Gerekli durumlarda özel tasarım ve mühendislik desteğiyle tamamen projeye özel çözümler geliştirilir. Böylece maksimum verim ve uzun ömür sağlanır."
+      "question": {
+        "tr": "Redüktör seçiminde ihtiyaçlara özel çözümler nasıl sunuluyor?",
+        "en": "How are tailored solutions provided in gearbox selection?"
+      },
+      "answer": {
+        "tr": "Her proje için yük, hız, tork ve çevresel koşullar analiz edilerek en uygun redüktör tipi belirlenir. Gerekli durumlarda özel tasarım ve mühendislik desteğiyle tamamen projeye özel çözümler geliştirilir. Böylece maksimum verim ve uzun ömür sağlanır.",
+        "en": "For each project, factors such as load, speed, torque, and environmental conditions are analyzed to determine the most suitable gearbox type. When necessary, custom designs and engineering support are provided to develop fully project-specific solutions, ensuring maximum efficiency and long lifespan."
+      }
     },
     {
-      "question": "Hangi ürün ve hizmetleri sunuyorsunuz, özel projeler yapılıyor mu?",
-      "answer": "Helisel, sonsuz, planet, konik dişli redüktörler ve motorlu sistemler sunuyoruz. Ayrıca, sektörel ihtiyaçlara özel proje danışmanlığı, tasarım ve üretim hizmetleriyle kurumlara özel çözümler geliştiriyoruz."
+      "question": {
+        "tr": "Hangi ürün ve hizmetleri sunuyorsunuz, özel projeler yapılıyor mu?",
+        "en": "What products and services do you offer, and do you handle custom projects?"
+      },
+      "answer": {
+        "tr": "Helisel, sonsuz, planet, konik dişli redüktörler ve motorlu sistemler sunuyoruz. Ayrıca, sektörel ihtiyaçlara özel proje danışmanlığı, tasarım ve üretim hizmetleriyle kurumlara özel çözümler geliştiriyoruz.",
+        "en": "We offer helical, worm, planetary, bevel gearboxes, and motorized systems. Additionally, we develop custom solutions for institutions through project consulting, design, and production services tailored to industry-specific needs."
+      }
     },
     {
-      "question": "Satış sonrası destek ve bakım hizmetleri nasıl sağlanıyor?",
-      "answer": "Tüm ürünlerimiz için teknik destek, yedek parça temini ve bakım hizmetleri sunuyoruz. Periyodik bakım, arıza teşhis ve onarım işlemleri profesyonel teknik ekiplerimiz tarafından yapılır. Müşterilerimize ayrıca kullanım kılavuzu, bakım planları ve eğitim desteği verilir."
+      "question": {
+        "tr": "Satış sonrası destek ve bakım hizmetleri nasıl sağlanıyor?",
+        "en": "How are after-sales support and maintenance services provided?"
+      },
+      "answer": {
+        "tr": "Tüm ürünlerimiz için teknik destek, yedek parça temini ve bakım hizmetleri sunuyoruz. Periyodik bakım, arıza teşhis ve onarım işlemleri profesyonel teknik ekiplerimiz tarafından yapılır. Müşterilerimize ayrıca kullanım kılavuzu, bakım planları ve eğitim desteği verilir.",
+        "en": "We provide technical support, spare parts, and maintenance services for all our products. Periodic maintenance, fault diagnosis, and repairs are carried out by our professional technical teams. We also offer user manuals, maintenance plans, and training support to our customers."
+      }
     }
   ]
 }

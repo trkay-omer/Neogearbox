@@ -1,0 +1,26 @@
+{
+  "titleAdres": {
+    "tr": "Adres Bilgilerimiz",
+    "en": "Our Address Information"
+  },
+  "titleTelefon": {
+    "tr": "Telefon Numaralarımız",
+    "en": "Our Phone Numbers"
+  },
+  "titleMedya": {
+    "tr": "Medya Hesaplarımız",
+    "en": "Our Media Accounts"
+  },
+  "titleMesai": {
+    "tr": "Mesai Saatlerimiz",
+    "en": "Our Working Hours"
+  },
+  "titleHaftaIcı": {
+    "tr": "Haftaiçi",
+    "en": "Weekdays"
+  },
+  "titleHaftasonu": {
+    "tr": "Hafta Sonu",
+    "en": "Weekend"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "img": "/images/hakkimizda/kolaj.png",
+  "topTitle": {
+    "tr": "Kurumsal",
+    "en": "Corporate"
+  },
+  "title1": {
+    "tr": "Misyonumuz",
+    "en": "Our Mission"
+  },
+  "title2": {
+    "tr": "Vizyonumuz",
+    "en": "Our Vision"
+  },
+  "text1": {
+    "tr": "Güç aktarım sistemlerinde yüksek kalite ve güvenilirlik sunmak temel misyonumuzdur. Müşterilerimizin ihtiyaçlarına özel, verimli ve uzun ömürlü redüktör çözümleri geliştirerek, sanayi üretiminin her alanına katma değer sağlıyoruz. Mühendislik gücümüzle, endüstriyel performansı ileriye taşıyoruz.",
+    "en": "Our core mission is to deliver high quality and reliability in power transmission systems. By developing efficient and long-lasting gearbox solutions tailored to our customers' needs, we add value to every aspect of industrial production. With our engineering strength, we elevate industrial performance."
+  },
+  "text2": {
+    "tr": "Her sektörün kendine özgü dinamiklerine uygun ürün ve hizmetler sunarak, global pazarda rekabetçi bir marka olmayı hedefliyoruz. Ar-Ge ve inovasyonu merkezimize alarak, yüksek teknolojili redüktör sistemleriyle geleceğin endüstrisine yön vermeyi amaçlıyoruz.",
+    "en": "We aim to become a competitive brand in the global market by offering products and services suited to the unique dynamics of each sector. By focusing on R&D and innovation, we strive to lead the future of industry with high-tech gearbox systems."
+  },
+  "text3": {
+    "tr": "Sadece bugünün değil, yarının üretim ihtiyaçlarını da gözeten çözümler geliştiriyoruz. Enerji verimliliği, dayanıklılık ve sürdürülebilirlik ilkeleriyle hareket ederek, çevreye duyarlı ve teknolojik sistemler üretiyoruz.",
+    "en": "We develop solutions not only for today’s but also for tomorrow’s production needs. Guided by the principles of energy efficiency, durability, and sustainability, we produce environmentally friendly and technological systems."
+  },
+  "text4": {
+    "tr": "Hedefimiz; Türkiye’de ve dünyada tercih edilen, ulusal ve uluslararası projelerde referans gösterilen lider bir redüktör firması olmaktır. Başarıyı yalnızca üretim süreçlerinde değil, müşteri memnuniyeti ve sektörel gelişime katkı noktasında da arıyoruz.",
+    "en": "Our goal is to be a leading gearbox company preferred in Turkey and worldwide, and referenced in national and international projects. We seek success not only in production processes but also in customer satisfaction and contribution to industry development."
+  }
+}

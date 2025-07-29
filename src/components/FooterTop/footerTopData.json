@@ -1,0 +1,22 @@
+{
+  "titleLeft": {
+    "tr": "Bizlere Ulaşın:",
+    "en": "Contact Us:"
+  },
+  "titleRight": {
+    "tr": "Adres İçin: ",
+    "en": "For Address:"
+  },
+  "descLeft": {
+    "tr": "Yukarıdaki telefon numarası ile gönül rahatlığıyla iletişim kurabilirsiniz.",
+    "en": "You can easily contact us using the phone number above."
+  },
+  "buttonLeftText": {
+    "tr": "Hemen Ara",
+    "en": "Call Now"
+  },
+  "butonRightText": {
+    "tr": "Yol Tarifi Al",
+    "en": "Get Directions"
+  }
+}

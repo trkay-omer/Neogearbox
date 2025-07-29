@@ -2,11 +2,22 @@ import "./Hakkimizda.scss";
 import ProjectName from "../../Kutuphanem/projectName/ProjectName";
 import HakkimizdaTextImg from "../../Kutuphanem/hakkimizdaTextImg/HakkimizdaTextImg";
 import WhyOur from "../../Kutuphanem/whyOur/WhyOur";
+import { useLang } from "../../langContext";
+import { img, topTitle } from "./hakkimizdaData.json";
+import {
+  title1,
+  title2,
+  text1,
+  text2,
+  text3,
+  text4,
+} from "./hakkimizdaData.json";
 
 const Hakkimizda = () => {
+  const { lang } = useLang();
   return (
     <div className="hakkimizda">
-      <ProjectName />
+      <ProjectName img={img} topTitle={topTitle[lang]} />
       <WhyOur loading={false} />
       <div className="slider">
         <div className="slider-track">
@@ -36,7 +47,14 @@ const Hakkimizda = () => {
           ))}
         </div>
       </div>
-      <HakkimizdaTextImg />
+      <HakkimizdaTextImg
+        title1={title1[lang]}
+        title2={title2[lang]}
+        text1={text1[lang]}
+        text2={text2[lang]}
+        text3={text3[lang]}
+        text4={text4[lang]}
+      />
     </div>
   );
 };

@@ -6,12 +6,13 @@ const SideBar = ({
   selectedCategoryName,
   filterByRoomCount,
   sidebarOpen,
+  sideBarTitle,
 }) => {
   return (
     <sidebar className={`sidebar ${sidebarOpen ? "open" : ""}`}>
       <div className="categories">
         <div className="title">
-          <h3 style={{ fontSize: "1.2rem" }}>Kategoriler</h3>
+          <h3 style={{ fontSize: "1.2rem" }}>{sideBarTitle}</h3>
           <hr />
         </div>
         <div className="listCategories">

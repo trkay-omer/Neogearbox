@@ -1,6 +1,8 @@
 import "./Acardion.scss";
+import { useLang } from "../../../langContext";
 
 function Acardion({ users }) {
+  const { lang } = useLang();
   return (
     <div className="acardion-template">
       <ul className="acardion">
@@ -10,7 +12,7 @@ function Acardion({ users }) {
             <div className="content">
               <span>
                 <h2>{user.name}</h2>
-                <p>{user.job}</p>
+                <p>{user.job[lang]}</p>
               </span>
             </div>
           </li>

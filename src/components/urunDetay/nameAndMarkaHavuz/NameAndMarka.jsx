@@ -1,7 +1,9 @@
 import "./NameAndMarka.scss";
 import data from "../../../data.json";
+import { useLang } from "../../../langContext.jsx";
 
 const NameAndMarka = ({ marka, name, desc, pdf }) => {
+  const { lang } = useLang();
   return (
     <div className="nameAndMarka">
       <span className="marka">{marka}</span>
@@ -11,7 +13,7 @@ const NameAndMarka = ({ marka, name, desc, pdf }) => {
         <p>{desc}</p>
 
         <p>
-          <span>Adres:</span> {data.adres}
+          <span>Adres:</span> {data.adres[lang]}
         </p>
       </div>
 
