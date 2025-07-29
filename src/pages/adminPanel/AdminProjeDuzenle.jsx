@@ -14,9 +14,11 @@ const AdminProjeDuzenle = () => {
 
   const [formData, setFormData] = useState({
     title: "",
+    titleEng: "",
     categoryId: "",
     type: "kw",
     titleContent: "",
+    titleContentEng: "",
     portion: "",
   });
   const [isLoading, setIsloading] = useState(true);
@@ -51,9 +53,11 @@ const AdminProjeDuzenle = () => {
             ...prevState,
 
             title: response.data.title || "",
+            titleEng: response.data.titleEng || "",
             categoryId: response.data.postDetails.category.id || "",
             type: "kw",
             titleContent: response.data.titleContent || "",
+            titleContentEng: response.data.titleContentEng || "",
           }));
           setImgKapak(response.data.coverImage);
           setImages(response.data.images);
@@ -314,11 +318,24 @@ const AdminProjeDuzenle = () => {
               <div className="bottomText">
                 <div>
                   <label>
-                    Ürün İsmi:
+                    Ürün İsmi (TR):
                     <input
                       type="text"
                       name="title"
                       value={formData.title}
+                      onChange={handleChange}
+                      required
+                    />
+                  </label>
+                </div>
+
+                <div>
+                  <label>
+                    Ürün İsmi (ENG):
+                    <input
+                      type="text"
+                      name="titleEng"
+                      value={formData.titleEng}
                       onChange={handleChange}
                       required
                     />
@@ -381,10 +398,22 @@ const AdminProjeDuzenle = () => {
 
                 <div>
                   <label>
-                    Kısa Açıklama:
+                    Kısa Açıklama (TR):
                     <textarea
                       name="titleContent"
                       value={formData.titleContent}
+                      onChange={handleChange}
+                      required
+                    />
+                  </label>
+                </div>
+
+                <div>
+                  <label>
+                    Kısa Açıklama (ENG):
+                    <textarea
+                      name="titleContentEng"
+                      value={formData.titleContentEng}
                       onChange={handleChange}
                       required
                     />

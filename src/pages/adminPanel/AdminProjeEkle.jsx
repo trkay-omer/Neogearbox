@@ -14,9 +14,11 @@ const AdminProjeEkle = () => {
   const [pdf, setPdf] = useState(null);
   const [formData, setFormData] = useState({
     title: "",
+    titleEng: "",
     categoryId: "",
     type: "kw",
     titleContent: "",
+    titleContentEng: "",
   });
   const [isLoading, setIsloading] = useState(false);
   const [categoryies, setCategoryies] = useState([]);
@@ -173,7 +175,7 @@ const AdminProjeEkle = () => {
                   ) : (
                     <div className="Text">
                       <ImageSearchIcon />
-                      Kategori Resmi Ekle
+                      Kapak Resmi Ekle
                     </div>
                   )}
                 </label>
@@ -229,11 +231,24 @@ const AdminProjeEkle = () => {
               <div className="bottomText">
                 <div>
                   <label>
-                    Ürün İsmi:
+                    Ürün İsmi (TR):
                     <input
                       type="text"
                       name="title"
                       value={formData.title}
+                      onChange={handleChange}
+                      required
+                    />
+                  </label>
+                </div>
+
+                <div>
+                  <label>
+                    Ürün İsmi (EN):
+                    <input
+                      type="text"
+                      name="titleEng"
+                      value={formData.titleEng}
                       onChange={handleChange}
                       required
                     />
@@ -276,10 +291,22 @@ const AdminProjeEkle = () => {
 
                 <div>
                   <label>
-                    Kısa Açıklama:
+                    Kısa Açıklama (TR):
                     <textarea
                       name="titleContent"
                       value={formData.titleContent}
+                      onChange={handleChange}
+                      required
+                    />
+                  </label>
+                </div>
+
+                <div>
+                  <label>
+                    Kısa Açıklama (EN):
+                    <textarea
+                      name="titleContentEng"
+                      value={formData.titleContentEng}
                       onChange={handleChange}
                       required
                     />

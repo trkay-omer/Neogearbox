@@ -52,7 +52,10 @@ const AdminCategoryEdit = () => {
       );
       setSelectedCategory(response.data);
       setImgKapak(response.data.coverImage?.filename || null);
-      setFormData({ categoryName: response.data.name });
+      setFormData({
+        categoryName: response.data.name,
+        categoryNameEng: response.data.nameEng,
+      });
     } catch (error) {
       console.error(error);
     } finally {
@@ -97,7 +100,7 @@ const AdminCategoryEdit = () => {
         });
       }
 
-      setFormData({ categoryName: "" });
+      setFormData({ categoryName: "", categoryNameEng: "" });
       setImgKapak(null);
       setSelectedCategory(null);
       await fetchCategories();
@@ -183,17 +186,31 @@ const AdminCategoryEdit = () => {
                   />
                 </label>
 
+                <label>
+                  Kategori İsmi (ENG):
+                  <input
+                    type="text"
+                    name="categoryNameEng"
+                    value={formData.categoryNameEng}
+                    onChange={handleChange}
+                    required
+                    autoComplete="off"
+                  />
+                </label>
+
                 <div className="buttonContainer">
                   <button
                     disabled={
                       !(
                         selectedCategory.name !== formData.categoryName ||
+                        selectedCategory.nameEng !== formData.categoryNameEng ||
                         imgKapak instanceof File
                       )
                     }
                     className={
                       !(
                         selectedCategory.name !== formData.categoryName ||
+                        selectedCategory.nameEng !== formData.categoryNameEng ||
                         imgKapak instanceof File
                       )
                         ? "disabled"

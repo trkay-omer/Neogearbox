@@ -10,26 +10,29 @@ import SearchIcon from "@mui/icons-material/Search";
 import data from "../../data.json";
 import SearchCard from "../SearchCard/SearchCard";
 import { BASE_URL } from "../../config/api";
-import { useTranslation } from "../../useTranslation";
 import { useLang } from "../../langContext.jsx";
-import { searchPlaceHolder, searchContentCount } from "./headerData.json";
+import {
+  searchPlaceHolder,
+  searchContentCount,
+  header,
+} from "./headerData.json";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [products, setProducts] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-  const { t } = useTranslation();
+
   const { lang } = useLang();
 
   const location = useLocation();
   const menuCloseDelay = 300; // ms
 
   const navigationData = [
-    { to: "/", label: t("header.home") },
-    { to: "/kategoriler", label: t("header.products") },
-    { to: "/kurumsal", label: t("header.about") },
-    { to: "/iletisim", label: t("header.contact") },
+    { to: "/", label: header.home[lang] },
+    { to: "/kategoriler", label: header.products[lang] },
+    { to: "/kurumsal", label: header.about[lang] },
+    { to: "/iletisim", label: header.contact[lang] },
   ];
 
   useEffect(() => {

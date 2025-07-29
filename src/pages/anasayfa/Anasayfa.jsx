@@ -60,7 +60,8 @@ const Anasayfa = () => {
       {sections2.map((Section, index) => (
         <FadeInSection key={index}>{Section}</FadeInSection>
       ))}
-      <div className="slider">
+
+      {/* <div className="slider">
         <div className="slider-track">
           {Array.from({ length: 10 }, (_, index) => (
             <div key={index} className="slide">
@@ -87,7 +88,8 @@ const Anasayfa = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
+
       <SikcaSorulan />
     </div>
   );

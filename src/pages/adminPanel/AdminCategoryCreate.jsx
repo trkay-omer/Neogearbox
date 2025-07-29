@@ -10,6 +10,7 @@ const AdminCategoryCreate = () => {
   const [imgKapak, setImgKapak] = useState(null);
   const [formData, setFormData] = useState({
     categoryName: "",
+    categoryNameEng: "",
   });
   const [isLoading, setIsloading] = useState(false);
 
@@ -62,7 +63,7 @@ const AdminCategoryCreate = () => {
       }
 
       setTimeout(() => {
-        setFormData({ categoryName: "" });
+        setFormData({ categoryName: "", categoryNameEng: "" });
         setImgKapak(null);
         setIsloading(false);
       }, 500);
@@ -111,11 +112,23 @@ const AdminCategoryCreate = () => {
           </div>
           <div className="rightSection">
             <label>
-              Kategori İsmi:
+              Kategori İsmi (TR):
               <input
                 type="text"
                 name="categoryName"
                 value={formData.categoryName}
+                onChange={handleChange}
+                required
+                autoComplete="off"
+              />
+            </label>
+
+            <label>
+              Kategori İsmi (ENG):
+              <input
+                type="text"
+                name="categoryNameEng"
+                value={formData.categoryNameEng}
                 onChange={handleChange}
                 required
                 autoComplete="off"

@@ -6,5 +6,23 @@
   "searchContentCount": {
     "tr": "Bulunan Ürün:",
     "en": "Found Product:"
+  },
+  "header": {
+    "home": {
+      "tr": "Anasayfa",
+      "en": "Home"
+    },
+    "about": {
+      "tr": "Kurumsal",
+      "en": "Corporate"
+    },
+    "contact": {
+      "tr": "İletişim",
+      "en": "Contact"
+    },
+    "products": {
+      "tr": "Ürünlerimiz",
+      "en": "Our Products"
+    }
   }
 }
