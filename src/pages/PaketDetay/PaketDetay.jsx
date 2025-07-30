@@ -7,8 +7,12 @@ import axios from "axios";
 import { BASE_URL } from "../../config/api";
 import MrGlide from "../../components/urunDetayGlide/MrGlide";
 import NameAndMarka from "../../components/urunDetay/nameAndMarkaHavuz/NameAndMarka";
+import { tabletNamee } from "./paketDetayData.json";
+import { useLang } from "../../langContext";
+import { magazaIsmi } from "../../data.json";
 
 const PaketDetay = () => {
+  const { lang } = useLang();
   const [isLoading, setIsLoading] = useState(false);
   const [productDetail, setProductDetail] = useState({});
   const [selectedImage, setSelectedImage] = useState(null);
@@ -34,8 +38,6 @@ const PaketDetay = () => {
     fetchData();
   }, [id]);
 
-  console.log(productDetail);
-
   const handleImageClick = (image) => {
     setSelectedImage(image.filename); // Yeni resmi güncelle
   };
@@ -44,8 +46,6 @@ const PaketDetay = () => {
     return <Loading />;
   }
 
-  console.log(productDetail);
-
   return (
     <div className="projeDetay">
       <div className="projectName">
@@ -53,7 +53,9 @@ const PaketDetay = () => {
         <div className="container">
           <div className="bannerText">
             <div className="title">
-              <h1>{productDetail.title}</h1>
+              <h1>
+                {lang == "tr" ? productDetail.title : productDetail.titleEng}
+              </h1>
             </div>
           </div>
         </div>
@@ -63,7 +65,7 @@ const PaketDetay = () => {
 
       <div className="container">
         <div className="tabletNamee">
-          <h3>Paket Resimlerimiz</h3>
+          <h3>{tabletNamee[lang]}</h3>
         </div>
 
         <div className="mainTop">
@@ -82,19 +84,23 @@ const PaketDetay = () => {
 
             <div className="rightActionSide">
               <NameAndMarka
-                marka={"Detay Peyzaj"}
-                pdf={productDetail.pdf}
-                name={productDetail.title}
-                desc={productDetail.titleContent}
+                marka={magazaIsmi[lang]}
+                pdf={productDetail?.pdf}
+                name={
+                  lang == "tr" ? productDetail?.title : productDetail?.titleEng
+                }
+                desc={
+                  lang == "tr"
+                    ? productDetail?.titleContent
+                    : productDetail?.titleContentEng
+                }
               />
             </div>
           </div>
         </div>
       </div>
 
-      <div className="container">
-        <SikcaSorulan />
-      </div>
+      <SikcaSorulan />
     </div>
   );
 };

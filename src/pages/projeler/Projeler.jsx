@@ -73,7 +73,9 @@ const Projeler = () => {
   return (
     <div className="projeler">
       <CategoryName
-        title={selectedCategory?.name}
+        title={
+          lang == "tr" ? selectedCategory?.name : selectedCategory?.nameEng
+        }
         img={selectedCategory?.coverImage?.filename}
       />
 
@@ -85,6 +87,7 @@ const Projeler = () => {
             filterByRoomCount={filterByRoomCount}
             sidebarOpen={sidebarOpen}
             sideBarTitle={sideBarTitle[lang]}
+            lang={lang}
           />
 
           <div className="contentProjelerRight">
@@ -93,6 +96,12 @@ const Projeler = () => {
               currentItems={currentItems}
               toggleSidebar={toggleSidebar}
               listTitle={listTitle[lang]}
+              categoryName={
+                lang == "tr"
+                  ? selectedCategory?.name
+                  : selectedCategory?.nameEng
+              }
+              lang={lang}
             />
 
             <Pagination

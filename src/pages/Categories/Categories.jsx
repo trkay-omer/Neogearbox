@@ -42,7 +42,7 @@ const Categories = () => {
             <CategoryCard
               key={index}
               linkName={item.linkName}
-              categoryName={item.name}
+              categoryName={lang == "tr" ? item.name : item.nameEng || ""}
               img={item.coverImage?.filename || null}
             />
           ))}

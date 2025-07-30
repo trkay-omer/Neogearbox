@@ -25,6 +25,8 @@ const Header = () => {
 
   const { lang } = useLang();
 
+  console.log(products);
+
   const location = useLocation();
   const menuCloseDelay = 300; // ms
 

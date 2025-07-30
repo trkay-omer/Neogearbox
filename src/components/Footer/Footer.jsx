@@ -27,7 +27,7 @@ const Footer = () => {
           <h3>{FooterData.title1[lang]}</h3>
           <hr />
           <ul className="footerHizmet">
-            {data.kategoriler[lang].map((item, index) => (
+            {data.kategoriler[lang]?.map((item, index) => (
               <li key={index}>
                 <span>{item}</span>
               </li>

@@ -4,6 +4,7 @@
   flex-direction: column;
   gap: 3rem;
   flex: 2;
+  z-index: 5;
 
   .title {
     display: flex;
@@ -67,6 +68,8 @@
     background-color: #fff;
     box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
     overflow-y: auto; /* EKLENDİ */
+    transition: 0.5s;
+    padding-top: calc(126px + 2rem);
 
     &::-webkit-scrollbar {
       width: 3px;
@@ -75,7 +78,7 @@
 }
 
 .sidebar.open {
+  top: 0;
   left: 0px;
-  padding-top: calc(126px + 2rem);
   z-index: 5;
 }

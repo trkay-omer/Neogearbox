@@ -7,9 +7,10 @@ const SideBar = ({
   filterByRoomCount,
   sidebarOpen,
   sideBarTitle,
+  lang,
 }) => {
   return (
-    <sidebar className={`sidebar ${sidebarOpen ? "open" : ""}`}>
+    <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
       <div className="categories">
         <div className="title">
           <h3 style={{ fontSize: "1.2rem" }}>{sideBarTitle}</h3>
@@ -23,7 +24,7 @@ const SideBar = ({
                 className={selectedCategoryName === item.name ? "selected" : ""}
               >
                 <button onClick={() => filterByRoomCount(item.linkName)}>
-                  <span>{item.name}</span>
+                  <span>{lang == "tr" ? item.name : item.nameEng}</span>
                   <ChevronRightOutlinedIcon
                     style={{ color: "black", fontSize: "1rem" }}
                   />
@@ -33,7 +34,7 @@ const SideBar = ({
           </ul>
         </div>
       </div>
-    </sidebar>
+    </div>
   );
 };
 

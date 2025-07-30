@@ -22,6 +22,7 @@ import AdminCategoryCreate from "./pages/adminPanel/AdminCategoryCreate.jsx";
 import AdminCategoryEdit from "./pages/adminPanel/AdminCategoryEdit.jsx";
 import PaketDetay from "./pages/PaketDetay/PaketDetay.jsx";
 import { LangProvider } from "./langContext.jsx";
+import KullanımAlanları from "./pages/KullanımAlanları/KullanımAlanları.jsx";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/urunler/:id" element={<PaketDetay />} />
           <Route path="/iletisim" element={<Iletisim />} />
           <Route path="/kurumsal" element={<Hakkimizda />} />
+          <Route path="/kullanimalanlari" element={<KullanımAlanları />} />
           <Route path="/admin-login" element={<AdminLogin />} />
 
           <Route

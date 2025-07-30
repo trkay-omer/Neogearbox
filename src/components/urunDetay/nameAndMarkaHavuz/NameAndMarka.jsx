@@ -1,6 +1,7 @@
 import "./NameAndMarka.scss";
 import data from "../../../data.json";
 import { useLang } from "../../../langContext.jsx";
+import { wpButtonText, pdfButtonText } from "./nameAndMarkaData.json";
 
 const NameAndMarka = ({ marka, name, desc, pdf }) => {
   const { lang } = useLang();
@@ -11,33 +12,29 @@ const NameAndMarka = ({ marka, name, desc, pdf }) => {
 
       <div className="textHAvuz">
         <p>{desc}</p>
-
-        <p>
-          <span>Adres:</span> {data.adres[lang]}
-        </p>
       </div>
 
       <div className="buttons">
         <div className="sepeteEkle">
-          <a href={data.adres_linki} target="_blank" className="btnSepet">
-            Yol Tarifi Al
-          </a>
           <a
             href={data.whatsapp_linki}
             target="_blank"
             className="btnSepet green"
           >
-            Whatsapp Mesaj
+            {wpButtonText[lang]}
           </a>
-          <a
-            href={pdf?.filename}
-            download
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btnSepet red"
-          >
-            PDF İndir
-          </a>
+
+          {pdf?.filename && (
+            <a
+              href={pdf?.filename}
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btnSepet red"
+            >
+              {pdfButtonText[lang]}
+            </a>
+          )}
         </div>
       </div>
     </div>

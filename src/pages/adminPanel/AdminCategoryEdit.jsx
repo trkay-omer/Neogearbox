@@ -9,7 +9,10 @@ const AdminCategoryEdit = () => {
   const token = localStorage.getItem("authToken");
 
   const [imgKapak, setImgKapak] = useState(null);
-  const [formData, setFormData] = useState({ categoryName: "" });
+  const [formData, setFormData] = useState({
+    categoryName: "",
+    categoryNameEng: "",
+  });
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [categories, setCategories] = useState([]);
   const [isFetching, setIsFetching] = useState(false);
@@ -74,7 +77,10 @@ const AdminCategoryEdit = () => {
 
     setIsSubmitting(true);
     try {
-      if (selectedCategory.name !== formData.categoryName) {
+      if (
+        selectedCategory.name !== formData.categoryName ||
+        selectedCategory.nameEng !== formData.categoryNameEng
+      ) {
         const response = await axios.put(
           `${BASE_URL}/api/v1/category?id=${selectedCategory.id}`,
           formData,

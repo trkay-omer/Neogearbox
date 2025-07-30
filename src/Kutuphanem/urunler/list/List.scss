@@ -11,8 +11,8 @@
 
     .titleContent {
       display: flex;
-      gap: 2rem;
-      justify-content: space-between;
+      gap: 0.5rem;
+      // justify-content: space-between;
       align-items: center;
     }
   }
@@ -46,8 +46,21 @@
 }
 
 @media (max-width: 1024px) {
-  .filterIconContent {
-    display: block;
+  .title {
+    .titleContent {
+      align-self: flex-end;
+      .anaa {
+        display: none;
+      }
+
+      .katt {
+        display: block !important;
+      }
+
+      .filterIconContent {
+        display: block;
+      }
+    }
   }
 }
 
