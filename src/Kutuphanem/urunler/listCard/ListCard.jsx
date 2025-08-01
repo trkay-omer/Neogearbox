@@ -5,7 +5,7 @@ import { useLang } from "../../../langContext";
 const ListCard = ({ proje }) => {
   const { lang } = useLang();
   return (
-    <Link to={`/urunler/${proje.id}`} className="projeCard">
+    <Link to={`/products/${proje.id}`} className="projeCard">
       <div className="img">
         <img src={proje.coverImage} alt="" />
       </div>

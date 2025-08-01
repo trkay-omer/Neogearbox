@@ -1,31 +1,35 @@
 {
-  "headerTopText": {
+  "headerTopText2": {
     "tr": "Bir mühendislik hikayesi...",
     "en": "An engineering story..."
   },
-  "headerTopText2": {
+  "headerTopText": {
     "tr": "Formu Doldurunuz",
     "en": "Fill out the form"
   },
   "magazaIsmi": {
-    "tr": "Günal Redüktör",
-    "en": "Gunal Gearbox"
+    "tr": "Neogearbox",
+    "en": "Neogearbox"
   },
   "adres": {
     "tr": "Floor 1-2, No. 7, Lane 1088, Mingcheng Road, Shanghai, China",
     "en": "Floor 1-2, No. 7, Lane 1088, Mingcheng Road, Shanghai, China"
   },
-  "adres_linki": "https://maps.app.goo.gl/d8nV6nVgAokmanGearbox",
+  "form": {
+    "tr": "Gönül rahatlığıyla form gönderebilirsiniz",
+    "en": "You can send the form with peace of mind."
+  },
+  "adres_linki": "https://www.neogearbox.com/contact",
   "instagram": "@aokman_gearbox",
   "instagram_linki": "https://www.instagram.com/aokman_gearbox/",
-  "telefon": "+86 21 6415 7883",
-  "telefon_linki": "tel:+862164157883",
-  "whatsapp_linki": "https://wa.me/8618736055280",
+  "telefon": "+90 541 201 50 41",
+  "telefon_linki": "tel:+905412015041",
+  "whatsapp_linki": "https://wa.me/905412015041",
   "mail": "aokman@aokman-gearbox.com",
   "mail_linki": "mailto:aokman@aokman-gearbox.com",
   "footerDesc": {
-    "tr": "Firmamız, yüksek performanslı, dayanıklı ve mühendislik odaklı redüktör çözümleri sunan lider bir markadır. Endüstriyel ihtiyaçlara özel geliştirilen sistemlerimizle verimliliği artırır, üretim süreçlerinize güç katarız.",
-    "en": "Our company is a leading brand offering high-performance, durable and engineering-focused gearbox solutions. With systems specially developed for industrial needs, we increase efficiency and empower your production processes."
+    "tr": "Firmamız, yüksek performanslı, dayanıklı ve mühendislik odaklı planet redüktör çözümleri sunan lider bir markadır. Endüstriyel ihtiyaçlara özel geliştirilen sistemlerimizle verimliliği artırır, üretim süreçlerinize güç katarız.",
+    "en": "Our company is a leading brand offering high-performance, durable and engineering-focused planetary gearbox solutions. With systems specially developed for industrial needs, we increase efficiency and empower your production processes."
   },
   "kategoriler": {
     "tr": [

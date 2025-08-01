@@ -22,7 +22,8 @@ import AdminCategoryCreate from "./pages/adminPanel/AdminCategoryCreate.jsx";
 import AdminCategoryEdit from "./pages/adminPanel/AdminCategoryEdit.jsx";
 import PaketDetay from "./pages/PaketDetay/PaketDetay.jsx";
 import { LangProvider } from "./langContext.jsx";
-import KullanımAlanları from "./pages/KullanımAlanları/KullanımAlanları.jsx";
+import Form from "./pages/Form/Form.jsx";
+import Sektorler from "./pages/sektor/Sektorler.jsx";
 
 function App() {
   return (
@@ -32,13 +33,14 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Anasayfa />} />
-          <Route path="/kategoriler" element={<Categories />} />
-          <Route path="/kategoriler/:linkName" element={<Projeler />} />
-          <Route path="/urunler/:id" element={<PaketDetay />} />
-          <Route path="/iletisim" element={<Iletisim />} />
+          <Route path="/categories" element={<Categories />} />
+          <Route path="/categories/:linkName" element={<Projeler />} />
+          <Route path="/products/:id" element={<PaketDetay />} />
+          <Route path="/contact" element={<Iletisim />} />
           <Route path="/kurumsal" element={<Hakkimizda />} />
-          <Route path="/kullanimalanlari" element={<KullanımAlanları />} />
+          <Route path="/form" element={<Form />} />
           <Route path="/admin-login" element={<AdminLogin />} />
+          <Route path="/sectors" element={<Sektorler />} />
 
           <Route
             path="/admin"

@@ -1,0 +1,184 @@
+{
+  "sectorsData": [
+    {
+      "id": 1,
+      "title": {
+        "tr": "Otomasyon ve Robotik Sektörü",
+        "en": "Automation and Robotics Sector"
+      },
+      "image": "/images/sectors/robotik.jpeg",
+      "usageAreas": {
+        "tr": [
+          "Endüstriyel robot kolları (eklem hareketleri için)",
+          "Servo motorlu doğrusal aktüatör sistemleri",
+          "Pick & Place makineleri"
+        ],
+        "en": [
+          "Industrial robot arms (for joint movements)",
+          "Servo motor linear actuator systems",
+          "Pick & Place machines"
+        ]
+      },
+      "description": {
+        "tr": "Planet redüktörler, kompakt yapıları ve yüksek moment taşıma kapasiteleri sayesinde robotik uygulamalarda tercih edilir. Özellikle düşük backlash özellikleriyle yüksek hassasiyet gerektiren pozisyonlama sistemlerinde ideal çözümdür. Robot kol hareketlerinde maksimum tork aktarımı ile verimlilik sağlar.",
+        "en": "Planetary gearboxes are preferred in robotic applications due to their compact design and high torque transmission capacity. Their low backlash makes them ideal for high-precision positioning systems. They ensure maximum torque transfer in robotic arm movements, increasing efficiency."
+      }
+    },
+    {
+      "id": 2,
+      "title": {
+        "tr": "Takım Tezgahları ve CNC Makineleri",
+        "en": "Machine Tools and CNC Machines"
+      },
+      "image": "/images/sectors/cnc.jpeg",
+      "usageAreas": {
+        "tr": [
+          "CNC torna ve işleme merkezleri",
+          "Vidalı mil tahrikleri",
+          "Dönel tabla eksenleri"
+        ],
+        "en": [
+          "CNC turning and machining centers",
+          "Ball screw drives",
+          "Rotary table axes"
+        ]
+      },
+      "description": {
+        "tr": "Planet redüktörler, CNC makinelerinde eksen tahriklerinde ve döner tablaların kontrolünde kullanılır. Yüksek hassasiyetli pozisyonlama ve düşük boşluk özellikleri sayesinde, işleme kalitesini artırır ve takım ömrünü uzatır.",
+        "en": "Planetary gearboxes are used in axis drives and rotary table control in CNC machines. With high-precision positioning and low backlash, they improve machining quality and extend tool life."
+      }
+    },
+    {
+      "id": 3,
+      "title": {
+        "tr": "Ambalaj ve Dolum Makineleri",
+        "en": "Packaging and Filling Machines"
+      },
+      "image": "/images/sectors/ambalaj.jpeg",
+      "usageAreas": {
+        "tr": [
+          "Etiketleme makineleri",
+          "Dolum hatları",
+          "Ambalaj sarma makineleri"
+        ],
+        "en": ["Labeling machines", "Filling lines", "Wrapping machines"]
+      },
+      "description": {
+        "tr": "Ambalaj sektöründe hızlı ve sürekli hareket eden sistemlerde planet redüktörler, düzgün tork iletimi ve kompakt yapıları sayesinde yüksek performans sunar. Yüksek çevrim oranları ile makinelerin esnekliğini artırır.",
+        "en": "In the packaging sector, planetary gearboxes offer high performance in fast and continuous systems thanks to smooth torque transmission and compact design. High gear ratios enhance the flexibility of the machines."
+      }
+    },
+    {
+      "id": 4,
+      "title": {
+        "tr": "Otomotiv Üretim Hatları",
+        "en": "Automotive Production Lines"
+      },
+      "image": "/images/sectors/otomotiv.jpeg",
+      "usageAreas": {
+        "tr": [
+          "Kaynak robotları",
+          "Taşıma sistemleri",
+          "Pres besleme sistemleri"
+        ],
+        "en": ["Welding robots", "Conveyor systems", "Press feeding systems"]
+      },
+      "description": {
+        "tr": "Otomotiv üretim hatlarında kullanılan planet redüktörler, dayanıklılığı ve uzun ömürlü yapısıyla ön plana çıkar. Ağır hizmet tipi kullanımlarda bile sessiz çalışma ve düşük bakım ihtiyacı sağlar. Modüler tasarımları ile hızlı kurulum avantajı sunar.",
+        "en": "Planetary gearboxes used in automotive production lines stand out with their durability and long lifespan. Even in heavy-duty applications, they provide quiet operation and low maintenance. Modular designs offer fast installation advantages."
+      }
+    },
+    {
+      "id": 5,
+      "title": {
+        "tr": "İnşaat ve İş Makineleri",
+        "en": "Construction and Heavy Equipment"
+      },
+      "image": "/images/sectors/insaat.jpeg",
+      "usageAreas": {
+        "tr": [
+          "Beton pompaları",
+          "Vinç döndürme sistemleri",
+          "Paletli yürüyüş sistemleri"
+        ],
+        "en": [
+          "Concrete pumps",
+          "Crane slewing systems",
+          "Crawler drive systems"
+        ]
+      },
+      "description": {
+        "tr": "Planet redüktörler, kompakt yapısına rağmen yüksek tork gereksinimini karşılayarak ağır hizmet makinelerinde güvenle kullanılır. Tozlu, kirli ve dış ortam şartlarına dayanıklı yapılarıyla zorlu inşaat koşullarında sorunsuz çalışır.",
+        "en": "Despite their compact structure, planetary gearboxes meet high torque requirements and are reliably used in heavy-duty machinery. Their resistance to dusty, dirty, and outdoor conditions ensures smooth operation in tough construction environments."
+      }
+    },
+    {
+      "id": 6,
+      "title": {
+        "tr": "Gıda ve İçecek Üretim Hatları",
+        "en": "Food and Beverage Production Lines"
+      },
+      "image": "/images/sectors/gida.jpeg",
+      "usageAreas": {
+        "tr": [
+          "Konveyör sistemleri",
+          "Şişeleme makineleri",
+          "Paketleme robotları"
+        ],
+        "en": ["Conveyor systems", "Bottling machines", "Packaging robots"]
+      },
+      "description": {
+        "tr": "Paslanmaz gövde seçenekleriyle hijyenik koşullara uyum sağlayan planet redüktörler, gıda sektöründe tercih edilir. Sessiz çalışmaları ve bakım gerektirmeyen yapıları sayesinde üretim süreçlerinde kesintisiz hizmet sunar.",
+        "en": "With stainless steel housing options compatible with hygienic conditions, planetary gearboxes are preferred in the food industry. Their quiet operation and maintenance-free structure ensure uninterrupted service during production."
+      }
+    },
+    {
+      "id": 7,
+      "title": {
+        "tr": "Geri Dönüşüm ve Atık Yönetimi",
+        "en": "Recycling and Waste Management"
+      },
+      "image": "/images/sectors/geri-donusum.jpeg",
+      "usageAreas": {
+        "tr": [
+          "Parçalayıcı makineler",
+          "Ayırma makineleri",
+          "Konveyörlü taşıma hatları"
+        ],
+        "en": [
+          "Shredding machines",
+          "Sorting machines",
+          "Conveyor transport lines"
+        ]
+      },
+      "description": {
+        "tr": "Yüksek darbe yüklerine dayanıklı yapısıyla planet redüktörler, geri dönüşüm sektöründe ağır şartlarda kullanılmak üzere idealdir. Sağlamlık ve tork kapasitesi açısından üstün performans sunar.",
+        "en": "Thanks to their resistance to high impact loads, planetary gearboxes are ideal for harsh conditions in the recycling sector. They deliver outstanding performance in terms of durability and torque capacity."
+      }
+    },
+    {
+      "id": 8,
+      "title": {
+        "tr": "Enerji Üretim Sistemleri (Rüzgar, GES, HES)",
+        "en": "Energy Generation Systems (Wind, PV, Hydro)"
+      },
+      "image": "/images/sectors/enerji.jpeg",
+      "usageAreas": {
+        "tr": [
+          "Güneş panel yönlendirme sistemleri (solar tracking)",
+          "Rüzgar türbin pitch kontrol sistemleri",
+          "Hidro türbin yardımcı tahrikleri"
+        ],
+        "en": [
+          "Solar panel tracking systems",
+          "Wind turbine pitch control systems",
+          "Hydro turbine auxiliary drives"
+        ]
+      },
+      "description": {
+        "tr": "Enerji sektöründe planet redüktörler, yüksek güvenilirlik ve uzun ömür gerektiren uygulamalarda tercih edilir. Düşük bakım ihtiyacı ile sistem sürekliliğini artırır, yüksek verimlilikle enerji dönüşümüne katkı sağlar.",
+        "en": "In the energy sector, planetary gearboxes are preferred in applications requiring high reliability and long service life. Their low maintenance requirements enhance system continuity and contribute to efficient energy conversion."
+      }
+    }
+  ]
+}

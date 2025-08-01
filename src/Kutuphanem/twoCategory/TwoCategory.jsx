@@ -17,6 +17,7 @@ const TwoCategory = () => {
               buttonText={card.buttonText[lang]}
               img={card.img}
               key={`${index}.cardItem`}
+              to={card.to}
             />
           ))}
         </div>

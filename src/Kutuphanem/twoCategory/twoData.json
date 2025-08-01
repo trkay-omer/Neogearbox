@@ -2,8 +2,8 @@
   "dataCategoryTwo": [
     {
       "title": {
-        "tr": "Kategori 1",
-        "en": "Category 1"
+        "tr": "Planet Redüktör",
+        "en": "Planetary Gearbox"
       },
       "desc": {
         "tr": "Daha fazlası için lütfen ürünlerimiz inceleyin",
@@ -13,12 +13,13 @@
         "tr": "Tümünü Gör",
         "en": "View All"
       },
-      "img": "/images/anasayfa/K1.png"
+      "img": "/images/anasayfa/K1.png",
+      "to": "/categories/planetary-gearbox"
     },
     {
       "title": {
-        "tr": "Kategori 2",
-        "en": "Category 2"
+        "tr": "RV Redüktör",
+        "en": "RV Gearbox"
       },
       "desc": {
         "tr": "Daha fazlası için lütfen ürünlerimiz inceleyin",
@@ -28,7 +29,8 @@
         "tr": "Tümünü Gör",
         "en": "View All"
       },
-      "img": "/images/anasayfa/K2.png"
+      "img": "/images/anasayfa/K2.png",
+      "to": "/categories/rv-gearbox"
     }
   ]
 }

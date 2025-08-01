@@ -19,7 +19,7 @@ const Hakkimizda = () => {
     <div className="hakkimizda">
       <ProjectName img={img} topTitle={topTitle[lang]} />
       <WhyOur loading={false} />
-      <div className="slider">
+      {/* <div className="slider">
         <div className="slider-track">
           {Array.from({ length: 10 }, (_, index) => (
             <div key={index} className="slide">
@@ -46,7 +46,8 @@ const Hakkimizda = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div>*/}
+
       <HakkimizdaTextImg
         title1={title1[lang]}
         title2={title2[lang]}

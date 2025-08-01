@@ -1,0 +1,155 @@
+{
+  "formImage": "/images/form/form.jpeg",
+  "imageAlt": {
+    "tr": "Destek Görseli",
+    "en": "Support Image"
+  },
+  "title": {
+    "tr": "Form Gönderin",
+    "en": "Send Form"
+  },
+  "description": {
+    "tr": "Sizlere Dönelim",
+    "en": "Let's Get Back to You"
+  },
+  "formFields": {
+    "name": {
+      "placeholder": {
+        "tr": "Ad Soyad",
+        "en": "Full Name"
+      },
+      "validation": {
+        "min": {
+          "tr": "İsim en az 2 karakter olmalıdır",
+          "en": "Name must be at least 2 characters"
+        },
+        "max": {
+          "tr": "İsim en fazla 50 karakter olabilir",
+          "en": "Name can be maximum 50 characters"
+        },
+        "pattern": {
+          "tr": "Sadece harf ve boşluk kullanabilirsiniz",
+          "en": "You can only use letters and spaces"
+        },
+        "dangerous": {
+          "tr": "Tehlikeli karakterler içeriyor",
+          "en": "Contains dangerous characters"
+        },
+        "required": {
+          "tr": "İsim alanı zorunludur",
+          "en": "Name field is required"
+        }
+      }
+    },
+    "email": {
+      "placeholder": {
+        "tr": "E-mail",
+        "en": "E-mail"
+      },
+      "validation": {
+        "invalid": {
+          "tr": "Geçerli bir email adresi giriniz",
+          "en": "Please enter a valid email address"
+        },
+        "dangerous": {
+          "tr": "Tehlikeli karakterler içeriyor",
+          "en": "Contains dangerous characters"
+        },
+        "required": {
+          "tr": "Email alanı zorunludur",
+          "en": "Email field is required"
+        }
+      }
+    },
+    "subject": {
+      "placeholder": {
+        "tr": "Konu",
+        "en": "Subject"
+      },
+      "validation": {
+        "min": {
+          "tr": "Konu en az 3 karakter olmalıdır",
+          "en": "Subject must be at least 3 characters"
+        },
+        "max": {
+          "tr": "Konu en fazla 100 karakter olabilir",
+          "en": "Subject can be maximum 100 characters"
+        },
+        "pattern": {
+          "tr": "Geçersiz karakterler içeriyor",
+          "en": "Contains invalid characters"
+        },
+        "dangerous": {
+          "tr": "Tehlikeli karakterler içeriyor",
+          "en": "Contains dangerous characters"
+        },
+        "script": {
+          "tr": "Script etiketleri içeriyor",
+          "en": "Contains script tags"
+        },
+        "required": {
+          "tr": "Konu alanı zorunludur",
+          "en": "Subject field is required"
+        }
+      }
+    },
+    "message": {
+      "placeholder": {
+        "tr": "Mesajınız",
+        "en": "Your Message"
+      },
+      "validation": {
+        "min": {
+          "tr": "Mesaj en az 10 karakter olmalıdır",
+          "en": "Message must be at least 10 characters"
+        },
+        "max": {
+          "tr": "Mesaj en fazla 1000 karakter olabilir",
+          "en": "Message can be maximum 1000 characters"
+        },
+        "dangerous": {
+          "tr": "Tehlikeli karakterler içeriyor",
+          "en": "Contains dangerous characters"
+        },
+        "script": {
+          "tr": "Script etiketleri içeriyor",
+          "en": "Contains script tags"
+        },
+        "required": {
+          "tr": "Mesaj alanı zorunludur",
+          "en": "Message field is required"
+        }
+      }
+    }
+  },
+  "submitButton": {
+    "text": {
+      "tr": "Gönder",
+      "en": "Send"
+    },
+    "loading": {
+      "tr": "Gönderiliyor...",
+      "en": "Sending..."
+    }
+  },
+  "popup": {
+    "title": {
+      "tr": "✅ Başarılı!",
+      "en": "✅ Success!"
+    },
+    "message": {
+      "tr": "Formunuz başarıyla gönderildi. En kısa sürede size dönüş yapacağız.",
+      "en": "Your form has been sent successfully. We will get back to you as soon as possible."
+    },
+    "button": {
+      "tr": "Tamam",
+      "en": "OK"
+    }
+  },
+  "errorMessages": {
+    "formError": {
+      "tr": "Form gönderilirken bir hata oluştu. Lütfen tekrar deneyin.",
+      "en": "An error occurred while sending the form. Please try again."
+    }
+  }
+}

@@ -33,7 +33,7 @@ const ListCardDelete = ({ proje }) => {
         <div className="buttonOverlay">
           <Link
             // to={`/kategoriler/${proje.postDetails.category.linkName}`}
-            to={`/kategoriler`}
+            to={`/categories`}
             target="_blank"
             rel="noopener noreferrer"
             className="iconBox"

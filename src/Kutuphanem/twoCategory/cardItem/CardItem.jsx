@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./CardItem.scss";
-const CardItem = ({ title, desc, buttonText, img }) => {
+const CardItem = ({ to, title, desc, buttonText, img }) => {
   return (
     <div className="cardItemm">
       <div className="card-content">
@@ -8,7 +8,7 @@ const CardItem = ({ title, desc, buttonText, img }) => {
         <div className="text-content">
           <h2>{title}</h2>
           <p>{desc}</p>
-          <Link to="/urunler" className="button green-button">
+          <Link to={to} className="button green-button">
             {buttonText}
           </Link>
         </div>

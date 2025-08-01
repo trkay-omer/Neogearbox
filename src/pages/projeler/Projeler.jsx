@@ -62,7 +62,7 @@ const Projeler = () => {
   };
 
   const filterByRoomCount = (yeniCategory) => {
-    navigate(`/kategoriler/${yeniCategory}`); // Kesin yolu kullan
+    navigate(`/categories/${yeniCategory}`); // Kesin yolu kullan
     setSidebarOpen(false);
   };
 

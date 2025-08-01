@@ -4,8 +4,8 @@
     "en": "Contact Us:"
   },
   "titleRight": {
-    "tr": "Adres İçin: ",
-    "en": "For Address:"
+    "tr": "Form Gönderin: ",
+    "en": "Submit Form"
   },
   "descLeft": {
     "tr": "Yukarıdaki telefon numarası ile gönül rahatlığıyla iletişim kurabilirsiniz.",
@@ -16,7 +16,7 @@
     "en": "Call Now"
   },
   "butonRightText": {
-    "tr": "Yol Tarifi Al",
-    "en": "Get Directions"
+    "tr": "Form Gönderin",
+    "en": "Submit Form"
   }
 }

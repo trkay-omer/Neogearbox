@@ -9,19 +9,28 @@
   },
   "founderData": [
     {
-      "img": "/images/acardion/1.jpg",
-      "name": "Hasan H. Yıldırım",
+      "img": "/images/acardion/1.png",
+      "to": "/products/5",
+
+      "name": {
+        "tr": "Köşe Tipi Redüktör",
+        "en": "Corner Type Gearbox"
+      },
       "job": {
-        "tr": "Kurucu Ortak",
-        "en": "Co-Founder"
+        "tr": "Planet Redüktör",
+        "en": "Planetary Gearbox"
       }
     },
     {
-      "img": "/images/acardion/2.jpg",
-      "name": "Hüseyin Elbilek",
+      "img": "/images/acardion/2.png",
+      "to": "/products/8",
+      "name": {
+        "tr": "RV-C Serisi",
+        "en": "RV-C Series"
+      },
       "job": {
-        "tr": "Kurucu Ortak",
-        "en": "Co-Founder"
+        "tr": "RV Redüktör",
+        "en": "RV Gearbox"
       }
     }
   ]

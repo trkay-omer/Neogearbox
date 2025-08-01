@@ -13,14 +13,7 @@ const Iletisim = () => {
       <div className="container">
         <div className="content">
           <div className="map">
-            <iframe
-              src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.727291076892!2d26.403508375703286!3d40.14835797193013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b1a92701400185%3A0xc31f7bd21fd65cfb!2se-360%20Dijital!5e0!3m2!1str!2str!4v1753443077078!5m2!1str!2s${lang}`}
-              className="iframe"
-              style={{ border: "0" }}
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+            <img src="/images/contact.jpeg" alt="" />
           </div>
 
           <div className="infoIletisim">
@@ -46,7 +39,8 @@ const Iletisim = () => {
                   <EmailIcon />
                   <p>{data.mail}</p>
                 </a>
-                <a
+
+                {/* <a
                   id="sea"
                   target="_blank"
                   href={data.instagram_linki}
@@ -54,7 +48,7 @@ const Iletisim = () => {
                 >
                   <InstagramIcon />
                   <p>{data.instagram}</p>
-                </a>
+                </a> */}
               </div>
             </div>
 

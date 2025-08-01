@@ -1,5 +1,6 @@
 import "./Acardion.scss";
 import { useLang } from "../../../langContext";
+import { Link } from "react-router-dom";
 
 function Acardion({ users }) {
   const { lang } = useLang();
@@ -9,12 +10,13 @@ function Acardion({ users }) {
         {users?.map((user, index) => (
           <li key={index}>
             <img src={user.img} alt="" />
-            <div className="content">
+
+            <Link to={user.to} className="content">
               <span>
-                <h2>{user.name}</h2>
+                <h2>{user.name[lang]}</h2>
                 <p>{user.job[lang]}</p>
               </span>
-            </div>
+            </Link>
           </li>
         ))}
       </ul>

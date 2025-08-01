@@ -5,6 +5,8 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import data from "../../data.json";
 import { useLang } from "../../langContext.jsx";
 import FooterData from "./FooterData.json";
+import DynamicFormIcon from "@mui/icons-material/DynamicForm";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const { lang } = useLang();
@@ -51,7 +53,7 @@ const Footer = () => {
               </div>
             </li>
 
-            <li className="sag">
+            {/*  <li className="sag">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -60,17 +62,13 @@ const Footer = () => {
                 <InstagramIcon />
                 <span>{data.instagram}</span>
               </a>
-            </li>
+            </li> */}
 
             <li className="sag">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href={data.adres_linki}
-              >
-                <MapIcon />
-                <span>{data.adres[lang]}</span>
-              </a>
+              <Link to="/form">
+                <DynamicFormIcon />
+                <span>{data.form[lang]}</span>
+              </Link>
             </li>
           </ul>
         </div>

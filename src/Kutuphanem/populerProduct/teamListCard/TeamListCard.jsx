@@ -6,7 +6,7 @@ function TeamlisCard({ product }) {
   const { lang } = useLang();
   return (
     <li className="glide__slide">
-      <Link to={`/urunler/${product.id}`} className="card">
+      <Link to={`/products/${product.id}`} className="card">
         <div className="sliderImg">
           <img src={product.coverImage} alt="" />
         </div>

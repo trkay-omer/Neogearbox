@@ -32,9 +32,11 @@ const Header = () => {
 
   const navigationData = [
     { to: "/", label: header.home[lang] },
-    { to: "/kategoriler", label: header.products[lang] },
+    { to: "/categories", label: header.products[lang] },
     { to: "/kurumsal", label: header.about[lang] },
-    { to: "/iletisim", label: header.contact[lang] },
+    { to: "/sectors", label: header.sectors[lang] },
+    { to: "/contact", label: header.contact[lang] },
+    { to: "/form", label: header.form[lang] },
   ];
 
   useEffect(() => {
@@ -69,6 +71,11 @@ const Header = () => {
     }
   };
 
+  const closeMenuFunc = () => {
+    setIsSearchOpen(false);
+    setSearchTerm("");
+  };
+
   return (
     <header className="header">
       {/* Üst Header */}
@@ -76,7 +83,7 @@ const Header = () => {
         <div className="container">
           <div className="headerTopWrapper">
             <div className={`slogan ${isSearchOpen ? "hide-mobile" : ""}`}>
-              <span>{data.headerTopText[lang]}</span>
+              <Link to={"/form"}>{data.headerTopText[lang]}</Link>
             </div>
 
             {isSearchOpen && <div></div>}
@@ -102,13 +109,13 @@ const Header = () => {
                 <SearchIcon className="icon" />
               </button>
 
-              <a
+              {/*  <a
                 href={data.instagram_linki}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <InstagramIcon className="icon" />
-              </a>
+              </a>*/}
 
               <a
                 href={data.whatsapp_linki}
@@ -159,8 +166,7 @@ const Header = () => {
                     <button
                       className="closeButton"
                       onClick={() => {
-                        setIsSearchOpen(false);
-                        setSearchTerm("");
+                        closeMenuFunc();
                       }}
                     >
                       <CloseIcon />
@@ -169,7 +175,12 @@ const Header = () => {
 
                   <div className="listSearch">
                     {products?.map((product, index) => (
-                      <SearchCard key={index} product={product} />
+                      <SearchCard
+                        closeMenuFunc={closeMenuFunc}
+                        lang={lang}
+                        key={index}
+                        product={product}
+                      />
                     ))}
                   </div>
                 </div>

@@ -23,6 +23,14 @@
     "products": {
       "tr": "Ürünlerimiz",
       "en": "Our Products"
+    },
+    "sectors": {
+      "tr": "Sektörler",
+      "en": "Sectors"
+    },
+    "form": {
+      "tr": "Form Bırakın",
+      "en": "Leave a Form"
     }
   }
 }

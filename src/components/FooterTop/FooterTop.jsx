@@ -1,9 +1,10 @@
-import MapIcon from "@mui/icons-material/Map";
 import PhoneIcon from "@mui/icons-material/Phone";
 import "./FooterTop.scss";
 import data from "../../data.json";
 import { useLang } from "../../langContext.jsx";
 import footerTopData from "./footerTopData.json";
+import ForwardToInboxIcon from "@mui/icons-material/ForwardToInbox";
+import { Link } from "react-router-dom";
 
 const FooterTop = () => {
   const { lang } = useLang();
@@ -14,12 +15,10 @@ const FooterTop = () => {
           <PhoneIcon fontSize="large" className="iconDikkat" />
 
           <div className="infoDikkat">
-            <h3>
-              {footerTopData.titleLeft[lang]} {data.telefon}
-            </h3>
+            <h3>{footerTopData.titleLeft[lang]}</h3>
             <p>{footerTopData.descLeft[lang]}</p>
             <div>
-              <a href={data.telefon_linki}>
+              <a target="_blank" href={data.whatsapp_linki}>
                 <button>{footerTopData.buttonLeftText[lang]}</button>
               </a>
             </div>
@@ -27,15 +26,15 @@ const FooterTop = () => {
         </div>
 
         <div className="dikkatItem">
-          <MapIcon fontSize="large" className="iconDikkat" />
+          <ForwardToInboxIcon fontSize="large" className="iconDikkat" />
 
           <div className="infoDikkat">
             <h3>{footerTopData.titleRight[lang]}</h3>
-            <p>{data.adres[lang]}</p>
+            <p>{data.form[lang]}</p>
             <div>
-              <a target="_blank" href={data.adres_linki}>
+              <Link to={"/form"}>
                 <button>{footerTopData.butonRightText[lang]}</button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
