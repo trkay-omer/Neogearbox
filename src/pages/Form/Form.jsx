@@ -123,7 +123,7 @@ const FormComponent = () => {
           .replace(/on\w+=/gi, ""),
       };
 
-      const response = await fetch("https://formspree.io/f/movlloqk", {
+      const response = await fetch("https://formspree.io/f/xeozlqvg", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
