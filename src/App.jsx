@@ -37,7 +37,7 @@ function App() {
           <Route path="/categories/:linkName" element={<Projeler />} />
           <Route path="/products/:id" element={<PaketDetay />} />
           <Route path="/contact" element={<Iletisim />} />
-          <Route path="/kurumsal" element={<Hakkimizda />} />
+          <Route path="/corporate" element={<Hakkimizda />} />
           <Route path="/form" element={<Form />} />
           <Route path="/admin-login" element={<AdminLogin />} />
           <Route path="/sectors" element={<Sektorler />} />

@@ -23,7 +23,7 @@ const Header = () => {
   const [products, setProducts] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
-  const { lang } = useLang();
+  const { lang, setLang } = useLang();
 
   console.log(products);
 
@@ -33,10 +33,10 @@ const Header = () => {
   const navigationData = [
     { to: "/", label: header.home[lang] },
     { to: "/categories", label: header.products[lang] },
-    { to: "/kurumsal", label: header.about[lang] },
     { to: "/sectors", label: header.sectors[lang] },
-    { to: "/contact", label: header.contact[lang] },
+    { to: "/corporate", label: header.about[lang] },
     { to: "/form", label: header.form[lang] },
+    { to: "/contact", label: header.contact[lang] },
   ];
 
   useEffect(() => {
@@ -101,6 +101,17 @@ const Header = () => {
               ) : (
                 <span className="none">{data.headerTopText2[lang]}</span>
               )}
+
+              <button
+                style={{
+                  backgroundColor: "transparent",
+                  fontSize: "1rem",
+                  color: "whitesmoke",
+                }}
+                onClick={() => setLang(lang == "tr" ? "en" : "tr")}
+              >
+                {lang == "tr" ? "EN" : "TR"}
+              </button>
 
               <button
                 onClick={() => setIsSearchOpen(true)}
