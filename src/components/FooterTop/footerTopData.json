@@ -1,19 +1,19 @@
 {
   "titleLeft": {
-    "tr": "Bizlere Ulaşın:",
-    "en": "Contact Us:"
+    "tr": "Sektörlerimizi Görün",
+    "en": "See Our Industries"
   },
   "titleRight": {
     "tr": "Form Gönderin: ",
     "en": "Submit Form"
   },
   "descLeft": {
-    "tr": "Yukarıdaki telefon numarası ile gönül rahatlığıyla iletişim kurabilirsiniz.",
-    "en": "You can easily contact us using the phone number above."
+    "tr": "Çalıştığımız tüm sektörleri görerek bizi tanıyın",
+    "en": "Get to know us by seeing all the sectors we work in"
   },
   "buttonLeftText": {
-    "tr": "Hemen Ara",
-    "en": "Call Now"
+    "tr": "Go now",
+    "en": "Şimdi git"
   },
   "butonRightText": {
     "tr": "Form Gönderin",

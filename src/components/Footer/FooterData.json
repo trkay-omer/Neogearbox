@@ -10,5 +10,9 @@
   "title2": {
     "tr": "İletişim Bilgilerimiz",
     "en": "Our Contact Information"
+  },
+  "sector": {
+    "tr": "Sektörlere git",
+    "en": "Go to sectors"
   }
 }

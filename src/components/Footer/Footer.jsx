@@ -1,12 +1,10 @@
 import "./Footer.scss";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import MapIcon from "@mui/icons-material/Map";
-import PhoneIcon from "@mui/icons-material/Phone";
 import data from "../../data.json";
 import { useLang } from "../../langContext.jsx";
 import FooterData from "./FooterData.json";
 import DynamicFormIcon from "@mui/icons-material/DynamicForm";
 import { Link } from "react-router-dom";
+import HomeRepairServiceIcon from "@mui/icons-material/HomeRepairService";
 
 const Footer = () => {
   const { lang } = useLang();
@@ -43,11 +41,11 @@ const Footer = () => {
           <ul>
             <li className="sag">
               <div className="yeap">
-                <PhoneIcon />
+                <HomeRepairServiceIcon />
 
                 <a href={data.telefon_linki}>
                   <span style={{ marginRight: "-0.5rem" }} className="ici">
-                    {data.telefon}
+                    {FooterData.sector[lang]}
                   </span>
                 </a>
               </div>

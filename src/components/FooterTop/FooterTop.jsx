@@ -5,6 +5,7 @@ import { useLang } from "../../langContext.jsx";
 import footerTopData from "./footerTopData.json";
 import ForwardToInboxIcon from "@mui/icons-material/ForwardToInbox";
 import { Link } from "react-router-dom";
+import HomeRepairServiceIcon from "@mui/icons-material/HomeRepairService";
 
 const FooterTop = () => {
   const { lang } = useLang();
@@ -12,7 +13,7 @@ const FooterTop = () => {
     <div className="dikkat">
       <div className="container dikkatItems">
         <div className="dikkatItem">
-          <PhoneIcon fontSize="large" className="iconDikkat" />
+          <HomeRepairServiceIcon fontSize="large" className="iconDikkat" />
 
           <div className="infoDikkat">
             <h3>{footerTopData.titleLeft[lang]}</h3>
