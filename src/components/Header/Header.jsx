@@ -35,7 +35,6 @@ const Header = () => {
     { to: "/categories", label: header.products[lang] },
     { to: "/sectors", label: header.sectors[lang] },
     { to: "/corporate", label: header.about[lang] },
-    { to: "/form", label: header.form[lang] },
     { to: "/contact", label: header.contact[lang] },
   ];
 
@@ -83,7 +82,7 @@ const Header = () => {
         <div className="container">
           <div className="headerTopWrapper">
             <div className={`slogan ${isSearchOpen ? "hide-mobile" : ""}`}>
-              <Link to={"/form"}>{data.headerTopText[lang]}</Link>
+              <Link to={"/contact"}>{data.headerTopText[lang]}</Link>
             </div>
 
             {isSearchOpen && <div></div>}

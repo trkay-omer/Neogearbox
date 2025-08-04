@@ -2,6 +2,7 @@ import "./NameAndMarka.scss";
 import data from "../../../data.json";
 import { useLang } from "../../../langContext.jsx";
 import { wpButtonText, pdfButtonText } from "./nameAndMarkaData.json";
+import { Link } from "react-router-dom";
 
 const NameAndMarka = ({ marka, name, desc, pdf }) => {
   const { lang } = useLang();
@@ -16,13 +17,9 @@ const NameAndMarka = ({ marka, name, desc, pdf }) => {
 
       <div className="buttons">
         <div className="sepeteEkle">
-          <a
-            href={data.whatsapp_linki}
-            target="_blank"
-            className="btnSepet green"
-          >
+          <Link to={"/contact"} className="btnSepet green">
             {wpButtonText[lang]}
-          </a>
+          </Link>
 
           {pdf?.filename && (
             <a

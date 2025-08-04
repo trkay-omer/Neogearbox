@@ -65,7 +65,7 @@ const Footer = () => {
             </li> */}
 
             <li className="sag">
-              <Link to="/form">
+              <Link to="/contact">
                 <DynamicFormIcon />
                 <span>{data.form[lang]}</span>
               </Link>

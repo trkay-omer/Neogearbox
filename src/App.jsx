@@ -36,9 +36,8 @@ function App() {
           <Route path="/categories" element={<Categories />} />
           <Route path="/categories/:linkName" element={<Projeler />} />
           <Route path="/products/:id" element={<PaketDetay />} />
-          <Route path="/contact" element={<Iletisim />} />
+          <Route path="/contact" element={<Form />} />
           <Route path="/corporate" element={<Hakkimizda />} />
-          <Route path="/form" element={<Form />} />
           <Route path="/admin-login" element={<AdminLogin />} />
           <Route path="/sectors" element={<Sektorler />} />
 

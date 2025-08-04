@@ -32,7 +32,7 @@ const FooterTop = () => {
             <h3>{footerTopData.titleRight[lang]}</h3>
             <p>{data.form[lang]}</p>
             <div>
-              <Link to={"/form"}>
+              <Link to={"/contact"}>
                 <button>{footerTopData.butonRightText[lang]}</button>
               </Link>
             </div>
