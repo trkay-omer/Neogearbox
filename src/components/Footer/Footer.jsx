@@ -43,11 +43,11 @@ const Footer = () => {
               <div className="yeap">
                 <HomeRepairServiceIcon />
 
-                <a href={data.telefon_linki}>
+                <Link to={"/sectors"}>
                   <span style={{ marginRight: "-0.5rem" }} className="ici">
                     {FooterData.sector[lang]}
                   </span>
-                </a>
+                </Link>
               </div>
             </li>
 

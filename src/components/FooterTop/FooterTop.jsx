@@ -19,9 +19,9 @@ const FooterTop = () => {
             <h3>{footerTopData.titleLeft[lang]}</h3>
             <p>{footerTopData.descLeft[lang]}</p>
             <div>
-              <a target="_blank" href={data.whatsapp_linki}>
+              <Link to={"/sectors"}>
                 <button>{footerTopData.buttonLeftText[lang]}</button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
