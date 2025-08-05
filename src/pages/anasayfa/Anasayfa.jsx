@@ -53,6 +53,7 @@ const Anasayfa = () => {
     <div className="anasayfa">
       <Slider loading={loading} />
       <TwoCategory />
+
       <FadeInSection>
         <AnaProduct />
       </FadeInSection>

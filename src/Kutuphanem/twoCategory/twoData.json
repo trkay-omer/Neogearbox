@@ -31,6 +31,38 @@
       },
       "img": "/images/anasayfa/K2.png",
       "to": "/categories/rv-cyclo-gearbox"
+    },
+    {
+      "title": {
+        "tr": "Pinyon ve Kramayer",
+        "en": "Precision Rack and Pinions"
+      },
+      "desc": {
+        "tr": "Daha fazlası için lütfen ürünlerimiz inceleyin",
+        "en": "For more, please check our products"
+      },
+      "buttonText": {
+        "tr": "Tümünü Gör",
+        "en": "View All"
+      },
+      "img": "/images/anasayfa/K3.png",
+      "to": "/categories/precision-rack-and-pinions"
+    },
+    {
+      "title": {
+        "tr": "Pinyonlu Planet Redüktör",
+        "en": "Pinion Planetary Gearbox"
+      },
+      "desc": {
+        "tr": "Daha fazlası için lütfen ürünlerimiz inceleyin",
+        "en": "For more, please check our products"
+      },
+      "buttonText": {
+        "tr": "Tümünü Gör",
+        "en": "View All"
+      },
+      "img": "/images/anasayfa/K4.png",
+      "to": "/categories/complete-solutions-pinion-planetary-gearbox"
     }
   ]
 }
