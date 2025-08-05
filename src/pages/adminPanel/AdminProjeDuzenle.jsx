@@ -196,10 +196,11 @@ const AdminProjeDuzenle = () => {
 
       setTimeout(() => {
         navigate("/admin/urunler");
-        setIsloading(false);
       }, 500);
     } catch (error) {
       console.log(error);
+    } finally {
+      setIsloading(false);
     }
   };
 
