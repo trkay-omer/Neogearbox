@@ -18,8 +18,8 @@
     },
     {
       "title": {
-        "tr": "RV Redüktör",
-        "en": "RV Gearbox"
+        "tr": "RV Cyclo Redüktör",
+        "en": "RV Cyclo Gearbox"
       },
       "desc": {
         "tr": "Daha fazlası için lütfen ürünlerimiz inceleyin",
@@ -30,7 +30,7 @@
         "en": "View All"
       },
       "img": "/images/anasayfa/K2.png",
-      "to": "/categories/rv-gearbox"
+      "to": "/categories/rv-cyclo-gearbox"
     }
   ]
 }

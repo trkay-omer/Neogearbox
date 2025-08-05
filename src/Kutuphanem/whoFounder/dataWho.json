@@ -10,11 +10,11 @@
   "founderData": [
     {
       "img": "/images/acardion/1.png",
-      "to": "/products/5",
+      "to": "/products/1",
 
       "name": {
-        "tr": "Köşe Tipi Redüktör",
-        "en": "Corner Type Gearbox"
+        "tr": "PAB Yüksek Hassasiyetli Y...",
+        "en": "PAB High Precsion High T..."
       },
       "job": {
         "tr": "Planet Redüktör",
@@ -23,14 +23,14 @@
     },
     {
       "img": "/images/acardion/2.png",
-      "to": "/products/8",
+      "to": "/products/11",
       "name": {
-        "tr": "RV-C Serisi",
-        "en": "RV-C Series"
+        "tr": "Helis Dişli Pinyon",
+        "en": "Helical Spurs Pinions"
       },
       "job": {
-        "tr": "RV Redüktör",
-        "en": "RV Gearbox"
+        "tr": "Pinyon ve Kramayer",
+        "en": "Precision Rack and Pinions"
       }
     }
   ]

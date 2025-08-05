@@ -110,7 +110,7 @@ const AdminProjeSil = () => {
               </div>
 
               <Pagination
-                itemsPerPage={8}
+                itemsPerPage={12}
                 items={projeler}
                 setCurrentItems={setCurrentItems}
               />
