@@ -194,9 +194,7 @@ const AdminProjeDuzenle = () => {
         }
       }
 
-      setTimeout(() => {
-        navigate("/admin/urunler");
-      }, 500);
+      navigate("/admin/urunler");
     } catch (error) {
       console.log(error);
     } finally {

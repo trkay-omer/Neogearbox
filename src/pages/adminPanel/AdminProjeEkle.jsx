@@ -107,9 +107,7 @@ const AdminProjeEkle = () => {
         // ID ekle (örneğin gönderiden dönen ID kullanılabilir)
       }
 
-      setTimeout(() => {
-        navigate("/admin/urunler");
-      }, 500);
+      navigate("/admin/urunler");
     } catch (error) {
       console.log(error);
     } finally {
